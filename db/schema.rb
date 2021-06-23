@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_23_102325) do
+ActiveRecord::Schema.define(version: 2021_06_23_141032) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,20 +60,20 @@ ActiveRecord::Schema.define(version: 2021_06_23_102325) do
   create_table "user_dev_schools", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "dev_school_id", null: false
-    t.boolean "unlocked"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "unlocked", default: false
     t.index ["dev_school_id"], name: "index_user_dev_schools_on_dev_school_id"
     t.index ["user_id"], name: "index_user_dev_schools_on_user_id"
   end
 
   create_table "user_games", force: :cascade do |t|
-    t.boolean "unlocked"
-    t.boolean "completed"
     t.bigint "user_id", null: false
     t.bigint "game_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "unlocked", default: false
+    t.boolean "completed", default: false
     t.index ["game_id"], name: "index_user_games_on_game_id"
     t.index ["user_id"], name: "index_user_games_on_user_id"
   end
