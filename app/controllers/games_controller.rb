@@ -1,7 +1,14 @@
 class GamesController < ApplicationController
-    def show
+  def index
+    # @games = Game.where(user: current_user)
+    @games = policy_scope(Game)
+    # authorize @games
+  end
+  
+  def show
       @game = Game.find(params[:id])
-    end
+  end
+
 
     private
 

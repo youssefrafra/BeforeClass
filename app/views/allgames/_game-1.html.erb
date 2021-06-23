@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h1><%= image_tag "banner.svg", style:"width:50px;height:50px" %>Votre première bannière</h1>
+            <p>Dans ce premier jeu tu devras remplacer le text par </p>
+            <div id="game-1-input" style="color:white;background-color:#444444;font-size:0.7em;height: 212px;">
+            <div class="d-flex code-line"><div class="line-number">1</div><div><%='<div class="container">'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">2</div><div>
+            <%='<h1>'%>
+            <select name="variable1" id="answer1">
+            <optgroup label="answer">
+            <option value="Le wagon">Le wagon</option>
+            <option value="Le Wagon brings tech skills to creative people!">Le Wagon brings tech skills to creative people!</option>
+            <option value="Le Wagon brings tech skills to people!">Le Wagon brings tech skills to people!</option>
+            </optgroup>
+            </select>
+            <%='</h1>'%>
+            </div></div>
+            <div class="d-flex code-line"><div class="line-number">3</div><div><%='<p>Change your life and '%>
+            <select name="variable1" id="answer2">
+            <optgroup label="answer">
+            <option value="learn to code at one of our campuses around the world.">learn to code at one of our campuses around the world.</option>
+            <option value="our campuses around the world">our campuses around the world</option>
+            <option value="around the world">around the world</option>
+            </optgroup>
+            </select>
+            <%='</p>'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">4</div><div><%='<a class="btn btn-flat" href="#">Apply now</a>'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">5</div><div><%='</div>'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">6</div><div><%='</div>'%></div></div>
+            </div>
+            <%= link_to  "Test code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="story">
+                <p>Le dragon attaque votre village. Approche-toi suffisamment pour le combattre et le tuer !</p>
+            </div>
+                <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+                    <div class="container">
+                        <h1>Le Wagon brings tech skills to creative people!</h1>
+                        <p>Change your life and <span class="view-answer">learn to code at one of our campuses around the world.</span></p>
+                        <a class="btn btn-success" href="#">Apply now</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
