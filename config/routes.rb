@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :games, only: [:show]
+  resources :question, only: [:show]
+  get 'my_games', to: "profiles#my_games"
+  get 'my_devschools', to: "profiles#my_devschools"
+  patch 'unlock', to: "profiles#unlock!"
+  patch 'complete', to: "profiles#complete!"
 end
