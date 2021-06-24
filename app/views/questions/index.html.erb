@@ -1,0 +1,27 @@
+<h1>Dis-nous en plus sur toi !</h1>
+  <div class="quiz">
+    <% @questions.each do |question| %>
+      <div>
+        <%= question.content %>
+          <button class="btn btn-danger btn-no">NON</button>
+          <button class="btn btn-primary btn-yes">OUI</button>
+      </div>
+        <% end %>
+      </div>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <script type="text/javascript">
+
+    $('.quiz').slick({
+      nextArrow: $('.btn'),
+      dots: true,
+      infinite: false,
+      speed: 300,
+    });
+
+   </script>

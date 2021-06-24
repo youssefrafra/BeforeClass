@@ -1,12 +1,7 @@
 class QuestionsController < ApplicationController
+    skip_after_action :verify_policy_scoped
     
-    def show
-        @question = Question.find(params[:id])
-        authorize @question
+    def index
+        @questions = Question.all
     end
-
-
-    # def question_params
-    #     params.require(:questions).permit(:content, :category, :order)
-    # end
 end
