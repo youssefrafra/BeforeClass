@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h1><%= image_tag "frog.svg", style:"width:50px;height:50px" %> Flexbox froggy</h1>
+            <p>Guidez cette grenouille au nénuphar à la droite de l'étang en utilisant la propriété justify-content, qui aligne les éléments horizontalement et accepte les valeurs suivantes :<br>
+                -<strong>flex-start</strong> : Les éléments s'alignent au côté gauche du conteneur.<br>
+                -<strong>flex-end</strong> : Les éléments s'alignent au côté droit du conteneur.<br>
+                -<strong>center</strong> : Les éléments s'alignent au centre du conteneur.<br>
+                -<strong>space-between</strong> : Les éléments s'affichent avec un espace égal entre eux.<br>
+                -<strong>space-around</strong> : Les éléments s'affichent avec un espacement égal à l'entour d'eux. </p>
+            <div id="game-3-input" style="color:white;background-color:#444444;font-size:0.7em;height: 212px;">
+            <div class="d-flex code-line"><div class="line-number">1</div><div><%='#pond {'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">2</div><div><%='display : flex;'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">2</div><div><%='flex-direction :'%>
+            <select name="variable1" id="answer1">
+            <optgroup label="answer">
+            <option value="column">column</option>
+            <option value="row">row</option>
+            <option value="column-reverse">column-reverse</option>
+            </optgroup>
+            </select>
+            </div></div>
+            <div class="d-flex code-line"><div class="line-number">3</div><div><%='justify-content :'%>
+            <select name="variable1" id="answer2">
+            <optgroup label="answer">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="space-around">space-around</option>
+            </optgroup>
+            </select>
+            <%=';'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">4</div><div><%='};'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">5</div><div></div></div>
+            </div>
+            <%= link_to  "Test code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="story">
+                <p>Aidez Froggy la grenouille à atteindre le nénuphar en écrivant du code CSS!</p>
+            </div>
+                <div class="golf mt-4" style="background-color:#1F5768; width:100%;height:100%">
+                <div class="ball-field">
+                    <%= image_tag "golf-ball.svg", id:'ball' %>
+                </div>
+                    <%= image_tag "golf-field.svg", id:'hole' %>
+                </div>
+        </div>
+    </div>
+</div>
