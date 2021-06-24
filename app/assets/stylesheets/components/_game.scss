@@ -1,3 +1,41 @@
+#champion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10000;
+}
+
+#trophy{
+    height: 200px;
+    width: 200px;
+}
+.story{
+    display: flex;
+    align-items: center;
+    border: 12px double #072a40;
+    border-radius: 8px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.story p{
+    margin: 0;
+    padding: 5px;
+}
+
+.game-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 #game-1-input .line-number{
     background-color: #23241E;
     width: 50px;
@@ -7,7 +45,6 @@
 }
 
 #game-1-input .code-line :last-child{
-    // color: aqua;
     padding: 7px 0;
     margin: 0;
 }

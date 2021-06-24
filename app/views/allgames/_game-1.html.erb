@@ -1,8 +1,9 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6">
-            <h1><%= image_tag "banner.svg", style:"width:50px;height:50px" %>Votre première bannière</h1>
-            <p>Dans ce premier jeu tu devras remplacer le text par </p>
+            <h1 class="game-title"><%= image_tag "banner.svg", style:"width:50px;height:50px" %>Votre première bannière</h1>
+            <p>Ton premier exercice! La consigne est la suivante:<br>
+                - reproduis la page à droite en sélectionnant les bons choix. </p>
             <div id="game-1-input" style="color:white;background-color:#444444;font-size:0.7em;height: 212px;">
             <div class="d-flex code-line"><div class="line-number">1</div><div><%='<div class="container">'%></div></div>
             <div class="d-flex code-line"><div class="line-number">2</div><div>
@@ -29,13 +30,24 @@
             <div class="d-flex code-line"><div class="line-number">5</div><div><%='</div>'%></div></div>
             <div class="d-flex code-line"><div class="line-number">6</div><div><%='</div>'%></div></div>
             </div>
-            <%= link_to  "Test code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+            <div class="d-flex justify-content-between">
+                <%= link_to  "Test code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+                <% @nextgame = Game.find_by(order: Game.find(params[:id]).order + 1) %>
+                <% if @nextgame %>
+                    <%= link_to  "Next Challenge", game_path(@nextgame) , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                <% else %>
+                    <%= link_to  "All challenges", games_path , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                <% end %>
+            </div>
         </div>
         <div class="col-12 col-md-6">
             <div class="story">
-                <p>Le dragon attaque votre village. Approche-toi suffisamment pour le combattre et le tuer !</p>
+                <p>Reproduis cette page en code Html.</p>
             </div>
-                <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+                <div class="banner" style="position:relative; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+                    <div id="champion" style="position:absolute;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(7,42,64,0.8455531870951506) 64%);width:100%;height:100%;top:0">
+                        <%= image_tag "trophy.svg", id:"trophy" %>
+                    </div>
                     <div class="container">
                         <h1>Le Wagon brings tech skills to creative people!</h1>
                         <p>Change your life and <span class="view-answer">learn to code at one of our campuses around the world.</span></p>
