@@ -1,0 +1,2 @@
+<%= render  "allgames/game-#{@user_game.game.order}" %>
+<%= link_to  "", game_path(@user_game.game) ,method: :patch, id:"complete", style: 'display:none'%>

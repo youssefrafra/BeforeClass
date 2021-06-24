@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   patch 'unlock', to: "profiles#unlock!"
   patch 'complete', to: "profiles#complete!"
   post '/save_to_session', to: "questions#save_to_session"
+  # patch 'games/:id', to: "games#unlock"
+  patch 'games/:id', to: "games#complete"
 end
