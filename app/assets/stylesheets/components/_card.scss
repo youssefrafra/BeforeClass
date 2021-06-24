@@ -1,0 +1,163 @@
+.card-quiz {
+  color: white;
+  border-radius: 40px;
+  width: 800px;
+  height: 304px;
+  background-color: #178CA4;
+  text-align: center;
+  &-body {
+    width: 90%;
+    height: 95%;
+    background: #178CA4;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 1px;
+  }
+  &-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin: 30px;
+  }
+  &-text {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  &-btny {
+    margin: 116px;
+    background-color: #072A40;
+    color: #F5F5F5;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 8px 32px;
+  }
+  &-btnn {
+    margin: 116px;
+    background-color: #072A40;
+    color: #F5F5F5;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 8px 32px;
+  }
+}
+
+// Exemple in HTML for the card rendu
+// <div class="card-quiz">
+//   <div class="card-quiz-body">
+//     <h3 class="card-quiz-title">Question 1</h3>
+//     <p class="card-quiz-text">Dirais-tu que tu es créatif?</p>
+//     <%= link_to "Oui", root_path, class:"card-quiz-btny" %>
+//     <%= link_to "Non", root_path, class:"card-quiz-btnn" %>
+//   </div>
+// </div>
+
+.card-dashboard-1 {
+  color: white;
+  border-radius: 40px;
+  width: 958px;
+  height: 352px;
+  background-color: #178CA4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  .dashboard-img {
+    object-fit: cover;
+    padding: 32px;
+  }
+  &-title {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 14px;
+  }
+  &-text {
+    font-size: 18px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+    padding-right: 33px;
+  }
+  &-body {
+    padding: 16px;
+  }
+}
+
+// exemple profile front-end
+// <div class="card-dashboard-1">
+// <%= image_tag "logo.png", class: "dashboard-img" %>
+//   <div class="card-dashboard-1-body">
+//     <h3 class="card-dashboard-1-title">Ton profil: FRONT_END</h3>
+//     <p class="card-dashboard-1-text">Le développeur front end a une responsabilité générale : veiller à ce que les visiteurs du site Web puissent interagir facilement avec la page.
+//     Pour ce faire, il combine le design, la technologie et la programmation afin de coder l'apparence d'un site Web et de s'occuper du débogage.</p>
+//   </div>
+// </div>
+
+.card-dashboard-2 {
+  color: white;
+  border-radius: 40px;
+  width: 958px;
+  height: 352px;
+  background-color: #178CA4;
+  overflow: hidden;
+  align-items: center;
+  &-logos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .html-logo {
+      width: 80px;
+    }
+    .css-logo {
+      width: 75px;
+    }
+    .js-logo {
+      width: 75px;
+    }
+  }
+  h1 {
+    padding-top: 14px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  &-scores {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &-infos {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+// exemple card dashboard 2 sans la roue de progression et sans les mentions en bas
+// <div class="card-dashboard-2">
+//   <h1>TON AVANCEMENT</h1>
+//   <div class="container p-4">
+//   <div class="card-dashboard-2-logos">
+//       <%= image_tag "html.png", class: "html-logo" %>
+//       <%= image_tag "css.png", class: "css-logo" %>
+//       <%= image_tag "js.png", class: "js-logo" %>
+//   </div>
+//   </div>
+//   <div class="card-dashboard-2-scores">
+//       <p class="card-dashboard-2-text">20</p>
+//       <p class="card-dashboard-2-text">20</p>
+//       <p class="card-dashboard-2-text">20</p>
+//   </div>
+// </div>
+
+// exemple card 2 attention a finir
+// <div class="card-dashboard-2">
+//   <%= link_to root_path do %>
+//     <%= image_tag "banner.png", class: "dashb-banner" %>
+//   <% end %>
+//   <div class="card-dashboard-2-infos">
+//     <h2>Votre première bannière</h2>
+//     <p>Réalise ta première bannière en <strong>HTML</strong>.</p>
+//   </div>
+// </div>
