@@ -1,13 +1,19 @@
-<h1>Dis-nous en plus sur toi !</h1>
-  <div class="quiz">
-    <% @questions.each do |question| %>
-      <div>
-        <%= question.content %>
-          <button class="btn btn-danger btn-no">NON</button>
-          <button class="btn btn-primary btn-yes">OUI</button>
-      </div>
+<div class="container">
+    <h1>Dis-nous en plus sur toi !</h1><br/>
+    <div class="d-flex justify-content-center">
+      <div class="quiz card-quiz">
+        <% @questions.each do |question| %>
+          <div class="d-flex flex-column justify-content-around h-100">
+              <div class="card-quiz-title"><%= question.content %></div><br/>
+              <div class="d-flex justify-content-around w-100">
+                <button class="btn card-quiz-btnn btn-no">NON</button>
+                <button class="btn card-quiz-btny btn-yes">OUI</button>
+              </div>
+          </div>
         <% end %>
       </div>
+    </div>
+</div>
 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

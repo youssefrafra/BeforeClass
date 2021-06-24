@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-    skip_after_action :verify_policy_scoped
+    # skip_after_action :verify_policy_scoped
     before_action :skip_authorization, only: :save_to_session
     
     def index
