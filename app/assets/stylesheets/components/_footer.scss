@@ -1,0 +1,28 @@
+footer {
+  // margin-top: 10px;
+  background-color: #F4E9E6;
+  color: #EF7E56;
+}
+
+.footer-link {
+  color: #072A40;
+  text-decoration: none;
+  &:hover {
+    color: #072A40;
+    opacity: 50%;
+    text-decoration: none;
+  }
+}
+
+.btn-footer {
+  height: 16px;
+  width: 16px;
+  margin: 8px;
+  color: #072A40;
+  font-weight: bold;
+
+  &:hover {
+    color: #072A40;
+    opacity: 50%;
+  }
+}
