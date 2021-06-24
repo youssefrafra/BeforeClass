@@ -12,7 +12,12 @@ const init_game = () =>{
         submit.addEventListener('click', (e) =>{
             e.preventDefault();
             if(answer1.value == correctanswer1 && answer2.value == correctanswer2){
-                alert("Correct");
+                const complete = document.getElementById("complete");
+                const next = document.getElementById("next");
+                const champion = document.getElementById("champion");
+                champion.style.zIndex = 1000;
+                complete.click();
+                next.hidden = false;
             }else{
                 alert("Incorrect");
             }
@@ -28,7 +33,12 @@ const init_game = () =>{
         submit.addEventListener('click', (e) =>{
             e.preventDefault();
             if(answer_game2.value == correctanswer){
-                alert("Correct");
+                const complete = document.getElementById("complete");
+                const next = document.getElementById("next");
+                const champion = document.getElementById("champion");
+                champion.style.zIndex = 1000;
+                complete.click();
+                next.hidden = false;
             }else{
                 alert("Incorrect");
             }
@@ -50,7 +60,12 @@ const init_game = () =>{
         submit.addEventListener('click', (e) =>{
             e.preventDefault();
             if(answer1_game3.value == correctanswer1 && answer2_game3.value == correctanswer2){
-                alert("Correct");
+                const complete = document.getElementById("complete");
+                const next = document.getElementById("next");
+                const champion = document.getElementById("champion");
+                champion.style.zIndex = 1000;
+                complete.click();
+                next.hidden = false;
             }else{
                 alert("Incorrect");
             }

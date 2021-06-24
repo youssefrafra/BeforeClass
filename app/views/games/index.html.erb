@@ -1,3 +1,10 @@
 <h1>My games</h1>
 <br/>
-<%= render  "allgames/game-3" %>
+<ul>
+    <% @games.each do |game| %>
+        <li>
+            Title :<%= game.title %>, Difficulty: <%=game.difficulty %>
+        </li>
+    <%end%>
+</ul>
+<% console %>
