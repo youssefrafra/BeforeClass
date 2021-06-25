@@ -1,3 +1,5 @@
+// import Swal from 'sweetalert2';
+const Swal = require('sweetalert2');
 
 const init_game = () =>{
     const game1 = document.getElementById("game-1-input");
@@ -15,11 +17,23 @@ const init_game = () =>{
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Correct !',
+                    showConfirmButton: false,
+                    timer: 800
+                  })
                 champion.style.zIndex = 1000;
                 complete.click();
                 next.hidden = false;
             }else{
-                alert("Incorrect");
+                Swal.fire({
+                    title: 'Wrong!',
+                    text: 'Oops! Wrong answer!',
+                    icon: 'error',
+                    confirmButtonText: 'Try again'
+                  })
             }
         });
     };
@@ -36,11 +50,23 @@ const init_game = () =>{
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Correct !',
+                    showConfirmButton: false,
+                    timer: 1000
+                  })
                 champion.style.zIndex = 1000;
                 complete.click();
                 next.hidden = false;
             }else{
-                alert("Incorrect");
+                Swal.fire({
+                    title: 'Wrong!',
+                    text: 'Oops! Wrong answer!',
+                    icon: 'error',
+                    confirmButtonText: 'Try again'
+                  })
             }
         });
     };
@@ -63,11 +89,23 @@ const init_game = () =>{
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Correct !',
+                    showConfirmButton: false,
+                    timer: 1000
+                  })
                 champion.style.zIndex = 1000;
                 complete.click();
                 next.hidden = false;
             }else{
-                alert("Incorrect");
+                Swal.fire({
+                    title: 'Wrong!',
+                    text: 'Oops! Wrong answer!',
+                    icon: 'error',
+                    confirmButtonText: 'Try again'
+                  })
             }
         });
     };

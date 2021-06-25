@@ -1,1 +1,76 @@
-<h1>Mon profile</h1>
+<div class="container mt-3 mb-3 profile-card" style="background-color:#178CA4;border-radius:15px">
+    <div>
+        <%= image_tag "webdesign.svg", class:"profile-photo" %>
+    </div>
+    <div class="d-flex flex-column justify-content-around">
+        <h1>Ton profil: FRONT_END</h1>
+        <p>Le développeur front-end est responsable de tout l’interface<br>
+            graphique visible par les utilisateurs. Il est donc un maitre dans<br>
+            l’implémentation du code HTML, CSS et JAVASCRIPT.<br><br>
+            Et toi? Où en es-tu avec ces langages?
+        </p>
+    </div>
+</div>
+<div class="d-flex justify-content-between">
+    <div class="container mt-3 mb-3 avancement" style="color:white;background-color:#178CA4;border-radius:15px;">
+        <h3>TON AVANCEMENT</h3>
+        <div class="d-flex justify-content-around" style="height:100px;">
+            <%= image_tag "html.svg", class:"badge-profil"%>
+            <%= image_tag "css.svg", class:"badge-profil"%>
+            <%= image_tag "js.svg", class:"badge-profil"%>
+        </div>
+        <div class="d-flex justify-content-around" style="height:100px;">
+            <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
+                <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
+                    <strong>20</strong>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
+                <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
+                    <strong>10</strong>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
+                <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
+                    <strong>10</strong>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="d-flex"><h1>0</h1><p>écoles débloquées</p></div>
+            <div class="d-flex"><h1><%= @completed_num %></h1><p>écoles débloquées</p></div>
+        </div>
+    </div>
+    
+    <div class="container mt-3 mb-3 challenges" style="color:white;background-color:#178CA4;border-radius:15px">
+        <h3>TES PROCHAINS CHALLENGES</h3>
+        <% @games.each do |game| %>
+            <% if @user_game.find_by(game: game).unlocked %>
+                <div class="card-challenge">
+                <%= link_to game_path(game) do%>
+                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
+                    <%end%>
+                    <div class="card-challenge-infos">
+                    <%= image_tag "#{game.category}.png" , class:"badge"%>
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
+                            <i class="fas fa-skull"></i>
+                        <%end%>
+                        <p><%= game.short_description %></p>
+                    </div>
+                </div>
+            <% else %>
+                <div class="card-challenge">
+                    <%= image_tag "lock.svg", class:"logo" %>
+                    <div class="card-challenge-infos">
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
+                            <i class="fas fa-skull"></i>
+                        <%end%>
+                        <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                    </div>
+                </div>
+            <%end%>
+        <%end%>
+    </div>
+</div>
