@@ -1,0 +1,96 @@
+<div class="container mt-3 mb-3" style="background-color:#178CA4;border-radius:15px">
+    <h1 style="color:white;padding:10px 0 10px 0">TES CHALLENGES FRONT-END</h1>
+    <br/>
+    <div class="row">
+        <% @games.each do |game| %>
+            <div class="col-12 col-md-6 mb-3">
+            <% if @user_game.find_by(game: game).unlocked %>
+                <div class="card-product">
+                <%= link_to game_path(game) do%>
+                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
+                <%end%>
+                    <div class="card-product-infos">
+                    <%= image_tag "#{game.category}.png" , class:"badge"%>
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
+                            <i class="fas fa-skull"></i>
+                        <%end%>
+                        <p><%= game.short_description %></p>
+                    </div>
+                </div>
+            <% else %>
+                <div class="card-product">
+                    <%= image_tag "lock.svg", class:"logo" %>
+                    <div class="card-product-infos">
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
+                            <i class="fas fa-skull"></i>
+                        <%end%>
+                        <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                    </div>
+                </div>
+            <%end%>
+            </div>
+        <%end%>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card-product">
+                <%= image_tag "lock.svg", class:"logo" %>
+                <div class="card-product-infos">
+                    <h2>Jeu à venir</h2>
+                    <% 3.times do %>
+                        <i class="fas fa-skull"></i>
+                    <%end%>
+                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card-product">
+                <%= image_tag "lock.svg", class:"logo" %>
+                <div class="card-product-infos">
+                    <h2>Jeu à venir</h2>
+                    <% 3.times do %>
+                        <i class="fas fa-skull"></i>
+                    <%end%>
+                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card-product">
+                <%= image_tag "lock.svg", class:"logo" %>
+                <div class="card-product-infos">
+                    <h2>Jeu à venir</h2>
+                    <% 3.times do %>
+                        <i class="fas fa-skull"></i>
+                    <%end%>
+                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card-product">
+                <%= image_tag "lock.svg", class:"logo" %>
+                <div class="card-product-infos">
+                    <h2>Jeu à venir</h2>
+                    <% 3.times do %>
+                        <i class="fas fa-skull"></i>
+                    <%end%>
+                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card-product">
+                <%= image_tag "lock.svg", class:"logo" %>
+                <div class="card-product-infos">
+                    <h2>Jeu à venir</h2>
+                    <% 3.times do %>
+                        <i class="fas fa-skull"></i>
+                    <%end%>
+                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -8,7 +8,7 @@
                 -<strong>center</strong> : Les éléments s'alignent au centre du conteneur.<br>
                 -<strong>space-between</strong> : Les éléments s'affichent avec un espace égal entre eux.<br>
                 -<strong>space-around</strong> : Les éléments s'affichent avec un espacement égal à l'entour d'eux. </p>
-            <div id="game-2-input" style="color:white;background-color:#444444;font-size:0.7em;height: 200px;">
+            <div id="game-2-input" style="color:white;background-color:#072A40;font-size:0.7em;height: 200px;">
             <div class="d-flex code-line"><div class="line-number">1</div><div><%='#pond {'%></div></div>
             <div class="d-flex code-line"><div class="line-number">2</div><div><%='display : flex;'%></div></div>
             <div class="d-flex code-line"><div class="line-number">3</div><div><%='justify-content :'%>
@@ -25,12 +25,12 @@
             <div class="d-flex code-line"><div class="line-number">6</div><div></div></div>
             </div>
             <div class="d-flex justify-content-between">
-                <%= link_to  "Test code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+                <%= link_to  "Test ton code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
                 <% @nextgame = Game.find_by(order: Game.find(params[:id]).order + 1) %>
                 <% if @nextgame %>
                     <%= link_to  "Next Challenge", game_path(@nextgame) , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
                 <% else %>
-                    <%= link_to  "All challenges", games_path , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                    <%= link_to  "Back to dashboard", dashboard_path , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
                 <% end %>
             </div>
         </div>
@@ -40,7 +40,7 @@
             </div>
                 <div class="pond mt-4" style="background-color:#1F5768; width:100%;height:100%">
                     <div id="champion" style="position:absolute;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(7,42,64,0.8455531870951506) 64%);width:100%;height:100%;top:0">
-                        <%= image_tag "trophy.svg", id:"trophy" %>
+                        <%= image_tag "tenor.gif", id:"trophy" %>
                     </div>
                     <%= image_tag "frog.svg", id:'frog' %>
                     <%= image_tag "water-lily.svg", id:'lily' %>
