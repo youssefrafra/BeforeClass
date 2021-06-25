@@ -7,7 +7,7 @@
             <% if @user_game.find_by(game: game).unlocked %>
                 <div class="card-product">
                 <%= link_to game_path(game) do%>
-                    <%= image_tag "#{game.category}.png" , class:"logo"%>
+                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
                 <%end%>
                     <div class="card-product-infos">
                     <%= image_tag "#{game.category}.png" , class:"badge"%>

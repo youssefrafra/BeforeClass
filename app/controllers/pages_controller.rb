@@ -10,5 +10,6 @@ class PagesController < ApplicationController
     @games = @user_game.map do |user_game|
       user_game.game
     end
+    @completed_num = @user_game.where(completed:true).count
   end
 end
