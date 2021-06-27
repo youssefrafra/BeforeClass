@@ -1,0 +1,38 @@
+.draggable-zone{
+    background-color: #072A40;
+    border-radius:7px;
+}
+.code-line .draggable-zone{
+    display: inline-block;
+    background-color:darkgray;
+    border-radius:7px;
+    height:1.9375rem ;
+    width:3rem ;
+}
+
+.line-code .draggable-zone{
+    margin: 0 5px;
+}
+.draggable-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffbc00;
+    border-radius:5px;
+    height:1.9375rem;
+    font-size: 20px !important;
+    width:3rem ;
+    cursor: pointer;
+}
+.grabbed{
+    border:solid 2px #ccc;
+}
+.hovered {
+    background-color: #ffbc00 !important;
+    border-style: dotted;
+}
+
+#answer-zone{
+    justify-content: space-evenly;
+}

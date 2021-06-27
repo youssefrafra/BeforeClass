@@ -18,7 +18,7 @@ const init_game = () =>{
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
                 Swal.fire({
-                    position: 'top-center',
+                    position: 'center',
                     icon: 'success',
                     title: 'Correct !',
                     showConfirmButton: false,
