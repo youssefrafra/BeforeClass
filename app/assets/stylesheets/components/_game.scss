@@ -44,7 +44,9 @@
     padding: 7px;
 }
 
-#game-1-input .code-line :last-child{
+#game-1-input .line-code{
+    display: flex;
+    align-items: center;
     padding: 7px 0;
     margin: 0;
 }
@@ -121,4 +123,19 @@
     width: 120px;
     height: 120px;
     z-index: 0;
+}
+
+#game-4-input .line-number{
+    background-color: #23241E;
+    width: 50px;
+    margin-right: 7px;
+    text-align: center;
+    padding: 7px;
+}
+
+#game-4-input .line-code{
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    margin: 0;
 }

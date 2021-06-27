@@ -1,9 +1,5 @@
 <h1>My games</h1>
 <br/>
-<ul>
-    <% @games.each do |game| %>
-        <li>
-            Title :<%= game.title %>, Difficulty: <%=game.difficulty %>
-        </li>
-    <%end%>
-</ul>
+<%= render  "allgames/game-4" %>
+
+

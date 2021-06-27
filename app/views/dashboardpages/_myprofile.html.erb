@@ -20,20 +20,22 @@
             <%= image_tag "js.svg", class:"badge-profil"%>
         </div>
         <div class="d-flex justify-content-around" style="height:100px;">
-            <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
-                <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
-                    <strong>20</strong>
-                </div>
+            <div style="position:relative">
+                <progress-ring stroke="10" radius="55" progress="30"></progress-ring>
+                <div style="position:absolute; top:34px; right:40px; font-size:30px;">10</div>
             </div>
-            <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
+            <%# <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
                 <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
                     <strong>10</strong>
                 </div>
+            </div> %>
+            <div style="position:relative">
+                <progress-ring stroke="10" radius="55" progress="10"></progress-ring>
+                <div style="position:absolute; top:34px; right:40px; font-size:30px;">10</div>
             </div>
-            <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
-                <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
-                    <strong>10</strong>
-                </div>
+            <div style="position:relative">
+                <progress-ring stroke="10" radius="55" progress="70"></progress-ring>
+                <div style="position:absolute; top:34px; right:40px; font-size:30px;">10</div>
             </div>
         </div>
         <div class="d-flex justify-content-around">

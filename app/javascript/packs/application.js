@@ -25,13 +25,14 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 import {init_game} from "../plugins/init_game"
 import {answerCounter} from "../plugins/quiz"
+import {progressCircle} from "../plugins/progress"
+import {initDraggable} from "../plugins/drag"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   init_game();
   answerCounter();
-
-
-
+  progressCircle();
+  initDraggable();
 });
