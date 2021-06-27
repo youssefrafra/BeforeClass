@@ -1,0 +1,59 @@
+.header-game{
+    width:100%;
+    height: 50px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-game button{
+    padding: 10px 20px;
+    background-color: #072A40;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editor{
+    width: 100%;
+    height: calc(100vh - 300px);
+    display: flex;
+}
+
+.editor .code{
+    width: 500px;
+    border-right: 1px solid #888;
+    // flex-grow: 0.3;
+}
+
+.editor .code > div{
+    background-color: #282828;
+
+    width: 100%;
+    height: 33.33%;
+    border-bottom: 1px solid #888;
+}
+
+.editor .preview{
+    // width: calc(100% - 500px);
+    height: 100%;
+    flex-grow: 1;
+}
+
+#preview-window{
+    background-color: #282828;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.CodeMirror {
+    height: auto;
+}

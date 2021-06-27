@@ -27,6 +27,7 @@ import {init_game} from "../plugins/init_game"
 import {answerCounter} from "../plugins/quiz"
 import {progressCircle} from "../plugins/progress"
 import {initDraggable} from "../plugins/drag"
+import {intEditor} from "../plugins/init_editor"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -35,4 +36,5 @@ document.addEventListener('turbolinks:load', () => {
   answerCounter();
   progressCircle();
   initDraggable();
+  intEditor();
 });
