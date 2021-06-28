@@ -4,7 +4,6 @@ class GamesController < ApplicationController
     @games = @user_game.map do |user_game|
       user_game.game
     end
-
     # @games = policy_scope(Game)
     # authorize @games
   end

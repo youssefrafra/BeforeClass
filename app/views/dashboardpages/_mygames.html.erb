@@ -10,12 +10,12 @@
                     <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
                 <%end%>
                     <div class="card-product-infos">
-                    <%= image_tag "#{game.category}.png" , class:"badge"%>
                         <h2><%= game.title %></h2>
                         <% (game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
                         <p><%= game.short_description %></p>
+                        <%= image_tag "#{game.category}.svg" , class:"lang"%>
                     </div>
                 </div>
             <% else %>
@@ -32,6 +32,7 @@
             <%end%>
             </div>
         <%end%>
+        <% 4.times do %>
         <div class="col-12 col-md-6 mb-3">
             <div class="card-product">
                 <%= image_tag "lock.svg", class:"logo" %>
@@ -44,53 +45,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 mb-3">
-            <div class="card-product">
-                <%= image_tag "lock.svg", class:"logo" %>
-                <div class="card-product-infos">
-                    <h2>Jeu à venir</h2>
-                    <% 3.times do %>
-                        <i class="fas fa-skull"></i>
-                    <%end%>
-                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 mb-3">
-            <div class="card-product">
-                <%= image_tag "lock.svg", class:"logo" %>
-                <div class="card-product-infos">
-                    <h2>Jeu à venir</h2>
-                    <% 3.times do %>
-                        <i class="fas fa-skull"></i>
-                    <%end%>
-                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 mb-3">
-            <div class="card-product">
-                <%= image_tag "lock.svg", class:"logo" %>
-                <div class="card-product-infos">
-                    <h2>Jeu à venir</h2>
-                    <% 3.times do %>
-                        <i class="fas fa-skull"></i>
-                    <%end%>
-                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 mb-3">
-            <div class="card-product">
-                <%= image_tag "lock.svg", class:"logo" %>
-                <div class="card-product-infos">
-                    <h2>Jeu à venir</h2>
-                    <% 3.times do %>
-                        <i class="fas fa-skull"></i>
-                    <%end%>
-                    <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
-                </div>
-            </div>
-        </div>
+        <% end %>
     </div>
 </div>

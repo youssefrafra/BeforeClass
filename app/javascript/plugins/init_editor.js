@@ -5,27 +5,34 @@ const intEditor = () => {
             lineNumbers: true,
             tabsize:4,
             theme: "dracula",
+            placeholder:"HTML code goes here...",
             mode:"xml"
         });
         const cssEditor = CodeMirror(document.querySelector(".editor .code .css-code"), {
             lineNumbers: true,
             tabsize:4,
             theme: "dracula",
+            placeholder:"CSS code goes here...",
             mode:"css"
         });
         const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"), {
             lineNumbers: true,
             tabsize:4,
             theme: "dracula",
+            placeholder:"Ton code Javascript...",
             mode:"javascript"
         });
         const runBtn = document.getElementById('run-btn');
+        let previewWindow = document.getElementById('preview-window').contentWindow.document;
+        let codehtml = '<html><head><title></title></head><body><h1>Hello world.</h1></body></html>' 
+        previewWindow.open();
+        previewWindow.write(codehtml);
+        previewWindow.close();
         runBtn.addEventListener('click', ()=> {
             let htmlCode = htmlEditor.getValue();
             let cssCode = "<style>" + cssEditor.getValue() + "</style>";
             let jsCode = "<scri" + "pt>" + jsEditor.getValue() + "</scri" + "pt>";
-            let previewWindow = document.getElementById('preview-window').contentWindow.document;
-            previewWindow.write(htmlCode + cssCode + jsCode);
+            previewWindow.write(codehtml+jsCode);
             previewWindow.close();
         })
     }
