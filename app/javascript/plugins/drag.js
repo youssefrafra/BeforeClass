@@ -50,15 +50,32 @@ const initDraggable = () => {
                 // this.firstChild
             }
             this.append(draggedElement)
+            // this.parentElement.firstElementChild.style.width = "fit-content"
+            
+            // console.log(this.firstElementChild.innerHTML)
+            const answer = document.querySelector(".container.answer")
+            setTimeout(() => (answer.innerHTML = getHtml()), 0); 
+            
         };
         // const game = document.getElementById()
+        function getHtml(){
+            const codeLines = document.querySelectorAll('.line-answer')
+            let html = '';
+            for(let line of codeLines){
+                // let test = [...line.getElementsByTagName('div')].filter(item => item.className != "draggable-zone").map(el => el.innerHTML)
+                html += [...line.getElementsByTagName('div')].filter(item => item.className != "draggable-zone").map(el => el.innerText).join('');
+                
+                // .join(''));
+            }
+            return html
+        }
         const submitButton = document.getElementById('submit');
         submitButton.addEventListener('click', (event) => {
             event.preventDefault();
             const inputZone= document.getElementById('game-4-input');
             const answersDivs = inputZone.querySelectorAll(".draggable-item");
             const ids = [...answersDivs].map( div => div.id)
-            const answer = ["1","2","3","4","5","6"]
+            const answer = ["1","2","3","4","5"]
             if (JSON.stringify(ids) == JSON.stringify(answer)){
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
@@ -71,7 +88,7 @@ const initDraggable = () => {
                     timer: 800
                   })
                 champion.style.zIndex = 1000;
-                // complete.click();
+                complete.click();
                 next.hidden = false;
             }else{
                 Swal.fire({

@@ -20,22 +20,22 @@
             <%= image_tag "js.svg", class:"badge-profil"%>
         </div>
         <div class="d-flex justify-content-around" style="height:100px;">
-            <div style="position:relative">
-                <progress-ring stroke="10" radius="55" progress="30"></progress-ring>
-                <div style="position:absolute; top:34px; right:40px; font-size:30px;">10</div>
-            </div>
             <%# <div class="d-flex align-items-center justify-content-center" style="border: black 3px solid;height:80px;width:80px;border-radius:100%;background-color:gray">
                 <div class="d-flex align-items-center justify-content-center" style="color:black;border: black 3px solid;height:50px;width:50px;border-radius:100%;background-color:white">
                     <strong>10</strong>
                 </div>
             </div> %>
             <div style="position:relative">
-                <progress-ring stroke="10" radius="55" progress="10"></progress-ring>
-                <div style="position:absolute; top:34px; right:40px; font-size:30px;">10</div>
+                <progress-ring stroke="10" radius="55" progress=<%=@completed_html * 100 / @total_html%>></progress-ring>
+                <div style="position:absolute; top:33px; right:45px; font-size:30px;"><%= @completed_html %></div>
             </div>
             <div style="position:relative">
-                <progress-ring stroke="10" radius="55" progress="70"></progress-ring>
-                <div style="position:absolute; top:34px; right:40px; font-size:30px;">10</div>
+                <progress-ring stroke="10" radius="55" progress=<%=@completed_css * 100 / @total_css%>></progress-ring>
+                <div style="position:absolute; top:33px; right:45px; font-size:30px;"><%= @completed_css %></div>
+            </div>
+            <div style="position:relative">
+                <progress-ring stroke="10" radius="55" progress=<%=0%>></progress-ring>
+                <div style="position:absolute; top:33px; right:45px; font-size:30px;"><%= @completed_js %></div>
             </div>
         </div>
         <div class="d-flex justify-content-around">
@@ -46,27 +46,27 @@
     
     <div class="container mt-3 mb-3 challenges" style="color:white;background-color:#178CA4;border-radius:15px">
         <h3>TES PROCHAINS CHALLENGES</h3>
-        <% @games.each do |game| %>
-            <% if @user_game.find_by(game: game).unlocked %>
+        <% @user_game.first(4).each do |usergame| %>
+            <% if usergame.unlocked %>
                 <div class="card-challenge">
-                <%= link_to game_path(game) do%>
-                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
+                <%= link_to game_path(usergame.game) do%>
+                    <%= image_tag "logo-#{usergame.game.order}.svg" , class:"logo"%>
                     <%end%>
                     <div class="card-challenge-infos">
-                    <%= image_tag "#{game.category}.png" , class:"badge"%>
-                        <h2><%= game.title %></h2>
-                        <% (game.difficulty).times do %>
+                    <%= image_tag "#{usergame.game.category}.svg" , class:"lang"%>
+                        <h2><%= usergame.game.title %></h2>
+                        <% (usergame.game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
-                        <p><%= game.short_description %></p>
+                        <p><%= usergame.game.short_description %></p>
                     </div>
                 </div>
             <% else %>
                 <div class="card-challenge">
                     <%= image_tag "lock.svg", class:"logo" %>
                     <div class="card-challenge-infos">
-                        <h2><%= game.title %></h2>
-                        <% (game.difficulty).times do %>
+                        <h2><%= usergame.game.title %></h2>
+                        <% (usergame.game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
                         <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
