@@ -239,7 +239,7 @@ devschool19 = DevSchool.new(
 
 devschool20 = DevSchool.new(
     name: "Le Capsule",
-    address: "IBC Business center, 5 Rue de l'Industrie, 98000 Monaco",
+    address: "5 Rue de l'Industrie, 98000 Monaco",
     duration: "10 semaines", 
     description: "Apprenez à coder dans notre campus de Monaco et rejoignez notre communauté d'experts de la tech, développeur ou développeuse web, intégrateur web, products owners, chef de projet digital, ou entrepreneurs !",  
     payment_facilities: true,
@@ -305,7 +305,7 @@ devschool25 =DevSchool.new(
 
 devschool26 = DevSchool.new(
     name: "Wild Code School",
-    address: "La Loupe 28240",
+    address: "La Loupe, 28240 La Loupe",
     duration: "5 mois", 
     description: "Formation développeur front-end à temps partiel : formez-vous tout en continuant à travailler ! Apprenez à coder en JavaScript / React pour devenir Développeur front-end en 5 mois avec notre formation à distance (en téléprésentiel).",  
     payment_facilities: true,
@@ -316,7 +316,7 @@ devschool26 = DevSchool.new(
 
 devschool27 = DevSchool.new(
     name: "OpenClassRooms",
-    address: "La Loupe 28240",
+    address: "La Loupe, 28240 La Loupe",
     duration: "12 mois", 
     description: "Devenez qui vous voulez être avec OpenClassrooms. Choisissez votre carrière. Suivez une formation constituée de projets professionnalisants et de séances individuelles avec un mentor dédié chaque semaine. Obtenez un diplôme reconnu par l'État. Enrichissez votre CV avec les programmes en alternance proposés par OpenClassrooms et gagnez un salaire tout en suivant votre formation.",  
     payment_facilities: true,
