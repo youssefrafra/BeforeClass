@@ -4,7 +4,20 @@ const answerCounter = () => {
   const btnNo = document.querySelectorAll(".btn-no");
   const btnYes = document.querySelectorAll(".btn-yes");
   const progressBar = document.querySelector(".progress-bar")
-  // const modal = document.getElementById("my-modal");
+  const cookiesNo = document.querySelector(".no");
+  const cookiesYep = document.querySelector(".yep");
+  if(cookiesNo) {
+    cookiesNo.addEventListener("click",(event) => {
+      postData("/");
+    });
+  } 
+ 
+
+  if(cookiesYep) {
+    cookiesYep.addEventListener("click",(event) => {
+    postData("users/sign_in");
+  });
+}
   
   
 
@@ -17,7 +30,6 @@ const answerCounter = () => {
       questionCount ++;
       progress();
       counter--; 
-      postData();
       if(questionCount == 6) {
         $('#myModal').modal('show');
       }   
@@ -29,19 +41,19 @@ const answerCounter = () => {
       questionCount ++;
       progress();
       counter++;
-      postData();
       if(questionCount == 6) {
         $('#myModal').modal('show');
+        postData("/");
       }
     });
   })
 
-  const postData = () => {
+  const postData = (url) => {
     const question_data = {counter: counter};
     // console.log("hello");
     fetchWithToken('/save', {
       method: "POST",
-      // redirect: "follow",
+      redirect: "follow",
       headers: {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -50,7 +62,7 @@ const answerCounter = () => {
   })
       // .then(response => response.json())
       .then((data) => {
-        // document.location.href = "/questions"
+        document.location.href = url
           console.log(data)
       })
   };

@@ -11,7 +11,8 @@ class QuestionsController < ApplicationController
     def save
         
         # number = session[:question_state]["counter"].to_i + 1
-        session[:question_state] = {counter: number}
+        session[:params] = params
+        session[:question_state] = {counter: params["counter"].to_i}
         session[:test] = "hello"
     end
 end
