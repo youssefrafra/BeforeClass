@@ -40,6 +40,7 @@ const init_game = () =>{
     if(game2){
         const correctanswer = "flex-end";
         const answer_game2 = document.getElementById("answer");
+        const frog = document.getElementById('frog');
         answer_game2.addEventListener('change', () => {
             const pond = document.querySelector('.pond');
             pond.style.justifyContent = answer_game2.value;
@@ -57,6 +58,7 @@ const init_game = () =>{
                     showConfirmButton: false,
                     timer: 1000
                   })
+                frog.style.animation = "none";
                 champion.style.zIndex = 1000;
                 complete.click();
                 next.hidden = false;
@@ -89,6 +91,7 @@ const init_game = () =>{
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                const ball = document.getElementById("ball");
                 Swal.fire({
                     position: 'top-center',
                     icon: 'success',
@@ -96,6 +99,7 @@ const init_game = () =>{
                     showConfirmButton: false,
                     timer: 1000
                   })
+                ball.style.animation = "none";
                 champion.style.zIndex = 1000;
                 complete.click();
                 next.hidden = false;

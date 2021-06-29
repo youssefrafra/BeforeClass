@@ -197,10 +197,10 @@
 
 .card-product .card-product-infos {
   padding: 16px;
-  position: relative;
+  flex-grow: 1;
 }
 
-.card-product .badge{
+.card-product-infos .lang{
   position: absolute;
   width: 50px;
   height: 50px;
@@ -223,4 +223,3 @@
   padding: 10px;
   margin: 8px;
 }
-
