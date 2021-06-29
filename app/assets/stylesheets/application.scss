@@ -13,3 +13,12 @@
 @import "pages/index";
 
 
+.main {
+  display: flex;
+}
+
+#map {
+  height: 100%;
+  position: sticky;
+  top: 0;
+}
