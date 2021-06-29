@@ -8,8 +8,9 @@ class QuestionsController < ApplicationController
         @questions = Question.all
     end
 
-    def save_to_session
-        number = session[:question_state]["counter"].to_i + 1
+    def save
+        
+        # number = session[:question_state]["counter"].to_i + 1
         session[:question_state] = {counter: number}
         session[:test] = "hello"
     end

@@ -10,38 +10,36 @@ const answerCounter = () => {
 
 
   let counter = 0;
-  let count = 0;
+  let questionCount = 0;
   
   btnNo.forEach((btn) => {
     btn.addEventListener("click", event => {
-      count ++;
+      questionCount ++;
       progress();
       counter--; 
       postData();
-      if(count == 6) {
+      if(questionCount == 6) {
         $('#myModal').modal('show');
-        // modal.style.display = "block";
       }   
     });
   })
 
   btnYes.forEach((btn) => {
     btn.addEventListener("click", event => {
-      count ++;
+      questionCount ++;
       progress();
       counter++;
       postData();
-      if(count == 6) {
+      if(questionCount == 6) {
         $('#myModal').modal('show');
-        // modal.style.display = "block";
       }
     });
   })
 
   const postData = () => {
     const question_data = {counter: counter};
-  
-    fetchWithToken('/save_to_session', {
+    // console.log("hello");
+    fetchWithToken('/save', {
       method: "POST",
       // redirect: "follow",
       headers: {
@@ -53,7 +51,7 @@ const answerCounter = () => {
       // .then(response => response.json())
       .then((data) => {
         // document.location.href = "/questions"
-          // console.log(data)
+          console.log(data)
       })
   };
 
