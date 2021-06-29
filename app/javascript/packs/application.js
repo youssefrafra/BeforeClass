@@ -17,10 +17,11 @@ ActiveStorage.start()
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
+// CSS
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 // External imports
 import "bootstrap";
-import { initMapbox } from '../plugins/init_mapbox';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -29,6 +30,7 @@ import {answerCounter} from "../plugins/quiz"
 import {progressCircle} from "../plugins/progress"
 import {initDraggable} from "../plugins/drag"
 import {intEditor} from "../plugins/init_editor"
+import { initMapbox } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:

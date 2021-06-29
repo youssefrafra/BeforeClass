@@ -20,6 +20,15 @@ class PagesController < ApplicationController
     @total_html =  total('html')
     @total_css =  total('css')
     @total_js =  total('js')
+
+    @markers = @devschools.geocoded.map do |devschool|
+      {
+        lat: devschool.latitude,
+        lng: devschool.longitude,
+        # info_window: render_to_string(partial: "info_window", locals: { devschool: devschool })
+        # image_url: helpers.asset_url('REPLACE_THIS_WITH_YOUR_IMAGE_IN_ASSETS')
+      }
+    end
   end
 
   def total(lang)
