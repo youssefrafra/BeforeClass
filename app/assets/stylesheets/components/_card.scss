@@ -220,6 +220,7 @@
     color: #F4E9E6;
     padding: 15px;
     margin: 7px;
+    cursor: pointer;
 }
 
 .card-content {
@@ -245,4 +246,9 @@ img {
 
 h4 {
   font-family: "Righteous", "cursive";
+}
+
+
+.card-button {
+  border: none;
 }

@@ -38,7 +38,8 @@ devschool1 = DevSchool.new(
     category: "Full stack",
     url: "https://www.ironhack.com/fr/developpement-web/paris",
     url_photo: "https://www.defi-metiers.fr/sites/default/files/doc-kelios/Logo/2017/11/07/IHlogo_new_blue.png",
-    price: "8000€")
+    price: "8000€",
+    remote: false)
 
 devschool2 = DevSchool.new(
     name: "Iron Hack",
@@ -50,7 +51,8 @@ devschool2 = DevSchool.new(
     category: "Full stack",
     url: "https://www.ironhack.com/fr/developpement-web/paris",
     url_photo: "https://www.defi-metiers.fr/sites/default/files/doc-kelios/Logo/2017/11/07/IHlogo_new_blue.png",
-    price: "8000€")
+    price: "8000€",
+    remote: true)
 
 devschool3 = DevSchool.new(
     name: "Le Wagon",
@@ -62,7 +64,8 @@ devschool3 = DevSchool.new(
     category: "Full stack",
     url: "httpas://www.lewagon.com/fr/lille/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool4 = DevSchool.new(
     name: "Le Wagon",
@@ -74,7 +77,8 @@ devschool4 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/lille/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: true)
 
 devschool5 = DevSchool.new(
     name: "Le Wagon",
@@ -86,7 +90,8 @@ devschool5 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: true)
 
 devschool6 = DevSchool.new(
     name: "Le Wagon",
@@ -98,7 +103,8 @@ devschool6 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool7 = DevSchool.new(
     name: "Le Wagon",
@@ -110,7 +116,8 @@ devschool7 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: true)
 
 devschool8 = DevSchool.new(
     name: "Le Wagon",
@@ -122,7 +129,8 @@ devschool8 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool9 = DevSchool.new(
     name: "Le Wagon",
@@ -134,7 +142,8 @@ devschool9 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/marseille/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: true)
 
 devschool10 = DevSchool.new(
     name: "Le Wagon",
@@ -146,7 +155,8 @@ devschool10 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/marseille/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool11 = DevSchool.new(
     name: "Le Wagon",
@@ -158,7 +168,8 @@ devschool11 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/nantes/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: true)
 
 devschool12 = DevSchool.new(
     name: "Le Wagon",
@@ -170,7 +181,8 @@ devschool12 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/nantes/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool13 = DevSchool.new(
     name: "Le Wagon",
@@ -182,7 +194,8 @@ devschool13 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/nice/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool14 = DevSchool.new(
     name: "Le Wagon",
@@ -194,7 +207,8 @@ devschool14 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/paris/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6900€")
+    price: "6900€",
+    remote: false)
 
 devschool15 = DevSchool.new(
     name: "Le Wagon",
@@ -206,7 +220,8 @@ devschool15 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/paris/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6900€")
+    price: "6900€",
+    remote: true)
 
 devschool16 = DevSchool.new(
     name: "Le Wagon",
@@ -218,7 +233,8 @@ devschool16 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/rennes/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool17 = DevSchool.new(
     name: "Le Wagon",
@@ -230,7 +246,8 @@ devschool17 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lewagon.com/fr/rennes/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
-    price: "6000€")
+    price: "6000€",
+    remote: true)
 
 devschool18 = DevSchool.new(
     name: "Le Réacteur",
@@ -242,7 +259,8 @@ devschool18 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lereacteur.io/bootcamp-javascript/formation-developpeur-web-mobile/",
     url_photo: "https://secure.meetupstatic.com/photos/event/8/a/c/0/600_480335520.jpeg",
-    price: "7500€")
+    price: "7500€",
+    remote: false)
 
 devschool19 = DevSchool.new(
     name: "Le Réacteur",
@@ -254,7 +272,8 @@ devschool19 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lereacteur.io/bootcamp-javascript/formation-developpeur-web-mobile/",
     url_photo: "https://secure.meetupstatic.com/photos/event/8/a/c/0/600_480335520.jpeg",
-    price: "6500€")
+    price: "6500€",
+    remote: false)
 
 devschool20 = DevSchool.new(
     name: "Le Capsule",
@@ -266,7 +285,8 @@ devschool20 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lacapsule.academy/coding-bootcamp-monaco",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
-    price: "7000€")
+    price: "7000€",
+    remote: false)
 
 devschool21 = DevSchool.new(
     name: "Le Capsule",
@@ -278,7 +298,8 @@ devschool21 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lacapsule.academy/coding-bootcamp-bordeaux",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool22 = DevSchool.new(
     name: "Le Capsule",
@@ -290,7 +311,8 @@ devschool22 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lacapsule.academy/coding-bootcamp-marseille",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool23 = DevSchool.new(
     name: "Le Capsule",
@@ -302,7 +324,8 @@ devschool23 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lacapsule.academy/coding-bootcamp-lyon",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
-    price: "6000€")
+    price: "6000€",
+    remote: false)
 
 devschool24 = DevSchool.new(
     name: "Le Capsule",
@@ -314,7 +337,8 @@ devschool24 = DevSchool.new(
     category: "Full stack",
     url: "https://www.lacapsule.academy/coding-bootcamp-paris",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
-    price: "7000€")
+    price: "7000€",
+    remote: false)
 
 devschool25 =DevSchool.new(
     name: "Oclock",
@@ -326,7 +350,8 @@ devschool25 =DevSchool.new(
     category: "Full stack",
     url: "https://oclock.io/formations/developpeur-web",
     url_photo: "https://21douze.fr/wp-content/uploads/2018/10/Logo-noir-vert-800x400.png",
-    price: "6500€")
+    price: "6500€",
+    remote: false)
 
 devschool26 = DevSchool.new(
     name: "Wild Code School",
@@ -338,7 +363,8 @@ devschool26 = DevSchool.new(
     category: "Front-end",
     url: "https://www.wildcodeschool.com/fr-FR/formations/formation-developpeur-front-end/remote-francais",
     url_photo: "https://www.wildcodeschool.com/static/imgs/logo.png",
-    price: "4050€")
+    price: "4050€",
+    remote: true)
 
 devschool27 = DevSchool.new(
     name: "OpenClassRooms",
@@ -350,7 +376,8 @@ devschool27 = DevSchool.new(
     category: "Front-end",
     url: "https://openclassrooms.com/fr/paths/314-developpeur-front-end#path_start",
     url_photo: "https://upload.wikimedia.org/wikipedia/fr/archive/0/0d/20150911160225%21Logo_OpenClassrooms.png",
-    price: "300€ / mois")
+    price: "300€ / mois",
+    remote: true)
 
     puts "Creating DevSchools...."
 

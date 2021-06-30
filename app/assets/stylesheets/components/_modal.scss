@@ -12,3 +12,25 @@
 .prog-w{
   height: 30px;
 }
+
+.school-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.school-info img {
+  width: 12%;
+}
+
+.school-description {
+  padding-left: 50px;
+}
+
+.school-url {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
+  margin-bottom: 20px;
+}
