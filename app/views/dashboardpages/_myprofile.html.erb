@@ -42,27 +42,27 @@
     
     <div class="container mt-3 mb-3 challenges" style="color:white;background-color:#178CA4;border-radius:15px">
         <h3>TES PROCHAINS CHALLENGES</h3>
-        <% @user_game.first(4).each do |usergame| %>
-            <% if usergame.unlocked %>
+        <% @games.first(4).each do |game| %>
+            <% if @user_game.find_by(game: game).unlocked %>
                 <div class="card-challenge">
-                <%= link_to game_path(usergame.game) do%>
-                    <%= image_tag "logo-#{usergame.game.order}.svg" , class:"logo"%>
+                <%= link_to game_path(game) do%>
+                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
                     <%end%>
                     <div class="card-challenge-infos">
-                    <%= image_tag "#{usergame.game.category}.svg" , class:"lang"%>
-                        <h2><%= usergame.game.title %></h2>
-                        <% (usergame.game.difficulty).times do %>
+                    <%= image_tag "#{game.category}.svg" , class:"lang"%>
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
-                        <p><%= usergame.game.short_description %></p>
+                        <p><%= game.short_description %></p>
                     </div>
                 </div>
             <% else %>
                 <div class="card-challenge">
                     <%= image_tag "lock.svg", class:"logo" %>
                     <div class="card-challenge-infos">
-                        <h2><%= usergame.game.title %></h2>
-                        <% (usergame.game.difficulty).times do %>
+                        <h2><%=  game.title %></h2>
+                        <% ( game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
                         <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
