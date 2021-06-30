@@ -9,4 +9,16 @@ class User < ApplicationRecord
   has_many :dev_schools, through: :user_dev_schools
   has_many :answers
   has_many :questions, through: :answers, dependent: :destroy
+  after_create :create_user_game
+
+  private
+
+  def create_user_game
+    games = Game.all
+    games.each do |game|
+      UserGame.create!(user: self, game: game, unlocked: game.order == 1)
+    end
+    # puts "======= created_session ===="
+    # raise
+  end
 end

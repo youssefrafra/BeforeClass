@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @question = Question.first
+    # raise
   end
 
   def dashboard
@@ -12,7 +13,6 @@ class PagesController < ApplicationController
     end
     
     @completed_num = @user_game.where(completed:true).count
-
     @devschools = DevSchool.all
     @completed_html = completed('html')
     @completed_css = completed('css')

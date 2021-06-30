@@ -36,9 +36,10 @@ import { fetchWithToken } from "../utils/fetch_with_token";
     btn.addEventListener("click", event => {
       questionCount ++;
       progress();
-      counter--; 
+      // counter--; 
       if(questionCount == 6) {
-        $('#myModal').modal('show');
+        // $('#myModal').modal('show');
+        postData("/users/sign_up");
       }   
     });
   })
@@ -49,7 +50,8 @@ import { fetchWithToken } from "../utils/fetch_with_token";
       progress();
       counter++;
       if(questionCount == 6) {
-        $('#myModal').modal('show');
+        // $('#myModal').modal('show');
+        postData("/users/sign_up");
       }
     });
   })
@@ -68,7 +70,7 @@ import { fetchWithToken } from "../utils/fetch_with_token";
   })
       .then((data) => {
         document.location.href = url
-          console.log(data)
+        // console.log(data)
       })
   };
 
