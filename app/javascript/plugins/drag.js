@@ -87,7 +87,7 @@ const initDraggable = () => {
                     showConfirmButton: false,
                     timer: 800
                   })
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{

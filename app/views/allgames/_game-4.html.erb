@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" style="background-color: rgba(255,255,255,0.7); padding-bottom: 4px; padding-top: 4px;">
             <h1 class="game-title"><%= image_tag "logo-1.svg", style:"width:80px;height:80px", class:'animate__animated animate__heartBeat'  %>Votre deuxième bannière</h1>
             <p class="consigne">Pareil au premier exercice, la consigne est la suivante:<br>
                 - reproduis la page à <span style="background-color:#ffbc00">droite</span> en sélectionnant les bons <span style="background-color:#ffbc00">Tags</span>. </p>
@@ -11,7 +11,7 @@
                 <div id="1" class="draggable-item" draggable='true'><%="<h1>"%></div>
                 <div id="3" class="draggable-item" draggable='true'><%="<p>"%></div>
             </div>
-            <div id="game-4-input" style="color:white;background-color:#072A40;font-size:1.3em;height: 17.1875rem;">
+            <div id="game-4-input" style="color:white;background-color:#072A40;font-size:1em;height: fit-content;">
                 <div class="d-flex code-line"><div class="line-number">1</div>
                     <div class="line-code"><%='<div class="container">'%></div>
                 </div>
@@ -46,16 +46,16 @@
                 </div>
             </div>
             <div class="d-flex justify-content-between">
-                <%= link_to  "Test ton code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+                <%= link_to  "Test ton code", "#" , class:"btn btn-dark btn-outline-light mt-3 mb-2", id:"submit"%>
                 <% @nextgame = Game.find_by(order: Game.find(params[:id]).order + 1) %>
                 <% if @nextgame %>
-                    <%= link_to  "Next Challenge", game_path(@nextgame) , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                    <%= link_to  "Next Challenge", game_path(@nextgame) , class:"btn btn-light btn-outline-success mt-3 mb-2", id:"next", hidden: true%>
                 <% else %>
-                    <%= link_to  "Back to dashboard", dashboard_path , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                    <%= link_to  "Back to dashboard", dashboard_path , class:"btn btn-light btn-outline-success mt-3 mb-2", id:"next", hidden: true%>
                 <% end %>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" style="background-color: rgba(255,255,255,0.7); padding-bottom: 4px; padding-top: 4px;">
             <div class="story">
                 <p>Reproduis cette page en code Html.</p>
             </div>

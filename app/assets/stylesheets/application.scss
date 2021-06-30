@@ -17,8 +17,17 @@
   display: flex;
 }
 
+body {
+  background-image: url(bghome4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-position: inherit;
+  // backdrop-filter: brightness(0.5);
+}
+
 #map {
   height: 100%;
   position: sticky;
-  top: 0;
+  top: 20px;
 }

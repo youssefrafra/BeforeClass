@@ -22,7 +22,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 // External imports
 import "bootstrap";
-
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import {init_game} from "../plugins/init_game"
