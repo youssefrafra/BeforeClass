@@ -2,9 +2,7 @@ const devSchoolModal = () => {
 
 const cardSchool = document.querySelectorAll('.card-school');
 const modalSchool = document.getElementById('show-school');
-
 const logo = modalSchool.querySelector(".school-logo")
-
 const name = modalSchool.querySelector(".school-title");
 const address = modalSchool.querySelector(".school-address");
 const description = modalSchool.querySelector(".school-description");
@@ -31,11 +29,8 @@ const url = modalSchool.querySelector(".school-url");
       category.innerText = `${event.currentTarget.dataset.category}`;
       url.innerText = `${event.currentTarget.dataset.url}`;
 
+
       logo.src = `${event.currentTarget.dataset.logo}`;
-
-
-
-      
 
 
 
