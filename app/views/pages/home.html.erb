@@ -1,9 +1,14 @@
 <div class="container d-flex flex-column" style="height: calc(100vh - 156.4px);">
   <div class="flex-grow-1" style="color: midnightblue; margin-top:120px">
-    <h1>Devenir développeur n'a jamais été aussi FUN !</h1>
-    <h2>Rejoins BeforeClass et relève tous les défis </h2>
-    <p>Viens découvrir ton profil développeur et teste tes compétences avec nos mini-jeux.</p>
-    <% unless user_signed_in? %>
+    <% if user_signed_in? %>
+      <h1>Heureux de te recevoir!</h1>
+      <h2>Le développement web est à ta portée</h2>
+      <p>Entraine-toi, fais des progrès et découvre des formations en développement web.
+      Clique sur Dashboard pour découvrir ton profil.</p>      
+    <% else %>
+      <h1>Devenir développeur n'a jamais été aussi FUN !</h1>
+      <h2>Rejoins BeforeClass et relève tous les défis </h2>
+      <p>Viens découvrir ton profil développeur et teste tes compétences avec nos mini-jeux.</p>
       <%= button_to "Découvre ton profil", questions_path,method: :get, class: "button" %>
     <%end%>
   </div>
