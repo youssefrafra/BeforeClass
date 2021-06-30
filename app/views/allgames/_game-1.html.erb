@@ -3,33 +3,33 @@
         <div class="col-12 col-md-6">
             <h1 class="game-title"><%= image_tag "logo-1.svg", style:"width:80px;height:80px;", class:'animate__animated animate__heartBeat' %>Votre première bannière</h1>
             <p>Ton premier exercice! La consigne est la suivante:<br>
-                - reproduis la page à <span style="background-color:#ffbc00">droite</span> en sélectionnant les bons choix. </p>
+                - reproduis la bannière du <span style="background-color:#ffbc00">bas</span> en sélectionnant les bons choix. </p>
             <div id="game-1-input" style="color:white;background-color:#072A40;font-size:1.2em;height: 15.75rem;">
-            <div class="d-flex code-line"><div class="line-number">1</div><div><%='<div class="container">'%></div></div>
-            <div class="d-flex code-line"><div class="line-number">2</div><div>
-            <%='<h1>'%>
-            <select name="variable1" id="answer1">
-            <optgroup label="answer">
-            <option value="Le wagon">Le wagon</option>
-            <option value="Le Wagon brings tech skills to creative people!">Le Wagon brings tech skills to creative people!</option>
-            <option value="Le Wagon brings tech skills to people!">Le Wagon brings tech skills to people!</option>
-            </optgroup>
-            </select>
-            <%='</h1>'%>
-            </div></div>
-            <div class="d-flex code-line"><div class="line-number">3</div><div><%='<p>Change your life and '%>
-            <select name="variable1" id="answer2">
-            <optgroup label="answer">
-            <option value="learn to code at one of our campuses around the world.">learn to code at one of our campuses around the world.</option>
-            <option value="our campuses around the world">our campuses around the world</option>
-            <option value="around the world">around the world</option>
-            </optgroup>
-            </select>
-            <%='</p>'%></div></div>
-            <div class="d-flex code-line"><div class="line-number">4</div><div><%='<a class="btn btn-flat" href="#">Apply now</a>'%></div></div>
-            <div class="d-flex code-line"><div class="line-number">5</div><div><%='</div>'%></div></div>
-            <div class="d-flex code-line"><div class="line-number">6</div><div><%='</div>'%></div></div>
-            </div>
+                <div class="d-flex code-line"><div class="line-number">1</div><div><%='<div class="container">'%></div></div>
+                <div class="d-flex code-line"><div class="line-number">2</div><div>
+                <%='<h1>'%>
+                <select name="variable1" id="answer1">
+                <optgroup label="réponse">
+                <option value="Le wagon">Le wagon</option>
+                <option value="Le Wagon brings tech skills to creative people!">Le Wagon brings tech skills to creative people!</option>
+                <option value="Le Wagon brings tech skills to people!">Le Wagon brings tech skills to people!</option>
+                </optgroup>
+                </select>
+                <%='</h1>'%>
+                </div></div>
+                <div class="d-flex code-line"><div class="line-number">3</div><div><%='<p>Change your life and '%>
+                <select name="variable1" id="answer2">
+                <optgroup label="réponse">
+                <option value="learn to code at one of our campuses around the world.">learn to code at one of our campuses around the world.</option>
+                <option value="our campuses around the world">our campuses around the world</option>
+                <option value="around the world">around the world</option>
+                </optgroup>
+                </select>
+                <%='</p>'%></div></div>
+                <div class="d-flex code-line"><div class="line-number">4</div><div><%='<a class="btn btn-flat" href="#">Apply now</a>'%></div></div>
+                <div class="d-flex code-line"><div class="line-number">5</div><div><%='</div>'%></div></div>
+                <div class="d-flex code-line"><div class="line-number">6</div><div><%='</div>'%></div></div>
+                </div>
             <div class="d-flex justify-content-between">
                 <%= link_to  "Test ton code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
                 <% @nextgame = Game.find_by(order: Game.find(params[:id]).order + 1) %>
@@ -44,16 +44,29 @@
             <div class="story">
                 <p>Reproduis cette page en code Html.</p>
             </div>
-                <div class="banner" style="position:relative; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-                    <div id="champion" style="position:absolute;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(7,42,64,0.8455531870951506) 64%);width:100%;height:100%;top:0">
-                        <%= image_tag "tenor.gif", id:"trophy" %>
-                    </div>
-                    <div class="container">
-                        <h1>Le Wagon brings tech skills to creative people!</h1>
-                        <p>Change your life and <span class="view-answer">learn to code at one of our campuses around the world.</span></p>
-                        <a class="btn btn-success" href="#">Apply now</a>
+            <div class="row">
+                <div class="col-12 col-md-12 mb-2">
+                    <div class="banner" style="position:relative; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+                        <div id="champion" style="position:absolute;background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(7,42,64,0.8455531870951506) 64%);width:100%;height:100%;top:0">
+                            <%= image_tag "tenor.gif", id:"trophy" %>
+                        </div>
+                        <div class="container">
+                            <h1 id="view1">Le wagon</h1>
+                            <p id="view2">learn to code at one of our campuses around the world.</p>
+                            <a class="btn btn-success" href="#">Apply now</a>
+                        </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-12">
+                    <div class="banner" style="position:relative; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+                        <div class="container">
+                            <h1>Le Wagon brings tech skills to creative people!</h1>
+                            <p>Change your life and learn to code at one of our campuses around the world.</p>
+                            <a class="btn btn-success" href="#">Apply now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -3,9 +3,7 @@
     <h1>Devenir développeur n'a jamais été aussi FUN !</h1>
     <h2>Rejoins BeforeClass et relève tous les défis </h2>
     <p>Viens découvrir ton profil développeur et teste tes compétences avec nos mini-jeux.</p>
-    <% if user_signed_in? %>
-      <%= button_to "Retentes le Quiz", questions_path,method: :get, class: "button" %>
-    <%else%>
+    <% unless user_signed_in? %>
       <%= button_to "Découvre ton profil", questions_path,method: :get, class: "button" %>
     <%end%>
     <%= image_tag "website.svg",class:"home-svg" %>
