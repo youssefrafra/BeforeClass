@@ -1,48 +1,48 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" style="background-color: rgba(255,255,255,0.7); padding-bottom: 4px; padding-top: 4px;">
             <h1 class="game-title"><%= image_tag "logo-1.svg", style:"width:80px;height:80px;", class:'animate__animated animate__heartBeat' %>Votre première bannière</h1>
             <p>Ton premier exercice! La consigne est la suivante:<br>
-                - reproduis la bannière du <span style="background-color:#ffbc00">bas</span> en sélectionnant les bons choix. </p>
-            <div id="game-1-input" style="color:white;background-color:#072A40;font-size:1.2em;height: 15.75rem;">
-                <div class="d-flex code-line"><div class="line-number">1</div><div><%='<div class="container">'%></div></div>
-                <div class="d-flex code-line"><div class="line-number">2</div><div>
-                <%='<h1>'%>
-                <select name="variable1" id="answer1">
-                <optgroup label="réponse">
-                <option value="Le wagon">Le wagon</option>
-                <option value="Le Wagon brings tech skills to creative people!">Le Wagon brings tech skills to creative people!</option>
-                <option value="Le Wagon brings tech skills to people!">Le Wagon brings tech skills to people!</option>
-                </optgroup>
-                </select>
-                <%='</h1>'%>
-                </div></div>
-                <div class="d-flex code-line"><div class="line-number">3</div><div><%='<p>Change your life and '%>
-                <select name="variable1" id="answer2">
-                <optgroup label="réponse">
-                <option value="learn to code at one of our campuses around the world.">learn to code at one of our campuses around the world.</option>
-                <option value="our campuses around the world">our campuses around the world</option>
-                <option value="around the world">around the world</option>
-                </optgroup>
-                </select>
-                <%='</p>'%></div></div>
-                <div class="d-flex code-line"><div class="line-number">4</div><div><%='<a class="btn btn-flat" href="#">Apply now</a>'%></div></div>
-                <div class="d-flex code-line"><div class="line-number">5</div><div><%='</div>'%></div></div>
-                <div class="d-flex code-line"><div class="line-number">6</div><div><%='</div>'%></div></div>
-                </div>
+                - reproduis la page à <span style="background-color:#ffbc00">droite</span> en sélectionnant les bons choix. </p>
+            <div id="game-1-input" style="color:white;background-color:#072A40;font-size:1em;height: fit-content;">
+            <div class="d-flex code-line"><div class="line-number">1</div><div><%='<div class="container">'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">2</div><div>
+            <%='<h1>'%>
+            <select name="variable1" id="answer1">
+            <optgroup label="answer">
+            <option value="Le wagon">Le wagon</option>
+            <option value="Le Wagon brings tech skills to creative people!">Le Wagon brings tech skills to creative people!</option>
+            <option value="Le Wagon brings tech skills to people!">Le Wagon brings tech skills to people!</option>
+            </optgroup>
+            </select>
+            <%='</h1>'%>
+            </div></div>
+            <div class="d-flex code-line"><div class="line-number">3</div><div><%='<p>Change your life and '%>
+            <select name="variable1" id="answer2">
+            <optgroup label="answer">
+            <option value="learn to code at one of our campuses around the world.">learn to code at one of our campuses around the world.</option>
+            <option value="our campuses around the world">our campuses around the world</option>
+            <option value="around the world">around the world</option>
+            </optgroup>
+            </select>
+            <%='</p>'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">4</div><div><%='<a class="btn btn-flat" href="#">Apply now</a>'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">5</div><div><%='</div>'%></div></div>
+            <div class="d-flex code-line"><div class="line-number">6</div><div><%='</div>'%></div></div>
+            </div>
             <div class="d-flex justify-content-between">
-                <%= link_to  "Test ton code", "#" , class:"btn btn-outline-dark mt-4", id:"submit"%>
+                <%= link_to  "Test ton code", "#" , class:"btn btn-dark btn-outline-light mt-3 mb-2", id:"submit"%>
                 <% @nextgame = Game.find_by(order: Game.find(params[:id]).order + 1) %>
                 <% if @nextgame %>
-                    <%= link_to  "Next Challenge", game_path(@nextgame) , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                    <%= link_to  "Next Challenge", game_path(@nextgame) , class:"btn btn-light btn-outline-success mt-3 mb-2", id:"next", hidden: true%>
                 <% else %>
-                    <%= link_to  "Back to dashboard", dashboard_path , class:"btn btn-outline-success mt-4", id:"next", hidden: true%>
+                    <%= link_to  "Back to dashboard", dashboard_path , class:"btn btn-light btn-outline-success mt-3 mb-2", id:"next", hidden: true%>
                 <% end %>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" style="background-color: rgba(255,255,255,0.7); padding-bottom: 4px; padding-top: 4px;">
             <div class="story">
-                <p>Reproduis cette page en code Html.</p>
+                <p>Reproduis cette page en code HTML.</p>
             </div>
             <div class="row">
                 <div class="col-12 col-md-12 mb-2">

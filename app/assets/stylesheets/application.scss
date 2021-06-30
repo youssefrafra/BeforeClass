@@ -12,9 +12,26 @@
 @import "components/index";
 @import "pages/index";
 
+.main {
+  display: flex;
+}
+
+body {
+  background-image: url(bghome4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-position: inherit;
+  // backdrop-filter: brightness(0.5);
+}
+
 #map {
   position: sticky;
+  top: 20px;
+}
+
   top: 0;
   width: 100vw;
   border-radius: 15px;
 }
+

@@ -32,7 +32,7 @@ const init_game = () =>{
                     showConfirmButton: false,
                     timer: 800
                   })
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
@@ -67,7 +67,7 @@ const init_game = () =>{
                     timer: 1000
                   })
                 frog.style.animation = "none";
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
@@ -108,7 +108,7 @@ const init_game = () =>{
                     timer: 1000
                   })
                 ball.style.animation = "none";
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
