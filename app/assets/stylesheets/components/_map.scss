@@ -7,10 +7,15 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.mapboxgl-canvas{
-  // height: 600px !important;
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 #map {
   border-radius: 15px;
 }
+
+// .mapboxgl-canvas{
+//   width: auto !important;
+// }

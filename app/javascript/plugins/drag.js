@@ -83,17 +83,17 @@ const initDraggable = () => {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'Correct !',
+                    title: 'C\' est correct !',
                     showConfirmButton: false,
                     timer: 800
                   })
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
                 Swal.fire({
                     title: 'Wrong!',
-                    text: 'Oops! Wrong answer!',
+                    text: 'Oops! Mauvaise réponse!',
                     icon: 'error',
                     confirmButtonText: 'Try again'
                   })

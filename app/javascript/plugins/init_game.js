@@ -10,7 +10,15 @@ const init_game = () =>{
         const correctanswer2 = "learn to code at one of our campuses around the world.";
         const answer1 = document.getElementById("answer1");
         const answer2 = document.getElementById("answer2");
+        const view1 = document.getElementById("view1");
+        const view2 = document.getElementById("view2");
         const submit = document.getElementById("submit");
+        answer1.addEventListener('change', (e) => {
+            view1.innerText = e.currentTarget.value
+        })
+        answer2.addEventListener('change', (e) => {
+            view2.innerText = e.currentTarget.value
+        })
         submit.addEventListener('click', (e) =>{
             e.preventDefault();
             if(answer1.value == correctanswer1 && answer2.value == correctanswer2){
@@ -20,17 +28,17 @@ const init_game = () =>{
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'Correct !',
+                    title: 'C\' est correct !',
                     showConfirmButton: false,
                     timer: 800
                   })
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
                 Swal.fire({
                     title: 'Wrong!',
-                    text: 'Oops! Wrong answer!',
+                    text: 'Oops! Mauvaise réponse!',
                     icon: 'error',
                     confirmButtonText: 'Try again'
                   })
@@ -54,18 +62,18 @@ const init_game = () =>{
                 Swal.fire({
                     position: 'top-center',
                     icon: 'success',
-                    title: 'Correct !',
+                    title: 'C\' est correct !',
                     showConfirmButton: false,
                     timer: 1000
                   })
                 frog.style.animation = "none";
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
                 Swal.fire({
                     title: 'Wrong!',
-                    text: 'Oops! Wrong answer!',
+                    text: 'Oops! Mauvaise réponse!',
                     icon: 'error',
                     confirmButtonText: 'Try again'
                   })
@@ -95,18 +103,18 @@ const init_game = () =>{
                 Swal.fire({
                     position: 'top-center',
                     icon: 'success',
-                    title: 'Correct !',
+                    title: 'C\' est correct !',
                     showConfirmButton: false,
                     timer: 1000
                   })
                 ball.style.animation = "none";
-                champion.style.zIndex = 1000;
+                champion.style.visibility = "visible";
                 complete.click();
                 next.hidden = false;
             }else{
                 Swal.fire({
                     title: 'Wrong!',
-                    text: 'Oops! Wrong answer!',
+                    text: 'Oops! Mauvaise réponse!',
                     icon: 'error',
                     confirmButtonText: 'Try again'
                   })

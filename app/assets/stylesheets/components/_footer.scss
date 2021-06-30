@@ -1,14 +1,15 @@
 footer {
   // margin-top: 10px;
-  background-color: #F4E9E6;
-  color: #EF7E56;
+  // background-color: rgba(0,0,0,0.1);
+  color: azure;
 }
 
 .footer-link {
-  color: #072A40;
+  color: azure;
   text-decoration: none;
+  font-weight: bolder;
   &:hover {
-    color: #072A40;
+    color: midnightblue;
     opacity: 50%;
     text-decoration: none;
   }
@@ -18,11 +19,11 @@ footer {
   height: 16px;
   width: 16px;
   margin: 8px;
-  color: #072A40;
+  color: azure;
   font-weight: bold;
 
   &:hover {
-    color: #072A40;
+    color: azure;
     opacity: 50%;
   }
 }

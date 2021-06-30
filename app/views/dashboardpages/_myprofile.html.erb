@@ -1,4 +1,4 @@
-<div class="container mt-3 mb-3 profile-card" style="background-color:#178CA4;border-radius:15px">
+<div class="container mt-3 mb-3 profile-card" style="background-color:rgba(70, 130, 180, 0.9);border-radius:15px">
     <div>
         <%= image_tag "#{current_user.profile_type}.svg", class:"profile-photo" %>
     </div>
@@ -8,7 +8,7 @@
     </div>
 </div>
 <div class="d-flex justify-content-between">
-    <div class="container mt-3 mb-3 avancement" style="color:white;background-color:#178CA4;border-radius:15px;">
+    <div class="container pt-3 mb-3 avancement" style="color:white;background-color:rgba(208, 81, 12, 0.9);border-radius:15px;">
         <h3>TON AVANCEMENT</h3>
         <div class="d-flex justify-content-around" style="height:100px;">
             <%= image_tag "html.svg", class:"badge-profil"%>
@@ -23,15 +23,15 @@
             </div> %>
             <div style="position:relative">
                 <progress-ring stroke="10" radius="55" progress=<%=@completed_html * 100 / @total_html%>></progress-ring>
-                <div style="position:absolute; top:33px; right:45px; font-size:30px;"><%= @completed_html %></div>
+                <div style="position:absolute; top:33px; right:46px; font-size:30px;"><%= @completed_html %></div>
             </div>
             <div style="position:relative">
                 <progress-ring stroke="10" radius="55" progress=<%=@completed_css * 100 / @total_css%>></progress-ring>
-                <div style="position:absolute; top:33px; right:45px; font-size:30px;"><%= @completed_css %></div>
+                <div style="position:absolute; top:33px; right:46px; font-size:30px;"><%= @completed_css %></div>
             </div>
             <div style="position:relative">
                 <progress-ring stroke="10" radius="55" progress=<%=0%>></progress-ring>
-                <div style="position:absolute; top:33px; right:45px; font-size:30px;"><%= @completed_js %></div>
+                <div style="position:absolute; top:33px; right:46px; font-size:30px;"><%= @completed_js %></div>
             </div>
         </div>
         <div class="d-flex justify-content-around">
@@ -40,29 +40,29 @@
         </div>
     </div>
     
-    <div class="container mt-3 mb-3 challenges" style="color:white;background-color:#178CA4;border-radius:15px">
+    <div class="container pt-3 mb-3 pb-1 challenges" style="color:white;background-color:rgba(208, 81, 12, 0.9);border-radius:15px">
         <h3>TES PROCHAINS CHALLENGES</h3>
-        <% @user_game.first(4).each do |usergame| %>
-            <% if usergame.unlocked %>
+        <% @games.first(4).each do |game| %>
+            <% if @user_game.find_by(game: game).unlocked %>
                 <div class="card-challenge">
-                <%= link_to game_path(usergame.game) do%>
-                    <%= image_tag "logo-#{usergame.game.order}.svg" , class:"logo"%>
+                <%= link_to game_path(game) do%>
+                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
                     <%end%>
                     <div class="card-challenge-infos">
-                    <%= image_tag "#{usergame.game.category}.svg" , class:"lang"%>
-                        <h2><%= usergame.game.title %></h2>
-                        <% (usergame.game.difficulty).times do %>
+                    <%= image_tag "#{game.category}.svg" , class:"lang"%>
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
-                        <p><%= usergame.game.short_description %></p>
+                        <p><%= game.short_description %></p>
                     </div>
                 </div>
             <% else %>
                 <div class="card-challenge">
                     <%= image_tag "lock.svg", class:"logo" %>
                     <div class="card-challenge-infos">
-                        <h2><%= usergame.game.title %></h2>
-                        <% (usergame.game.difficulty).times do %>
+                        <h2><%=  game.title %></h2>
+                        <% ( game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
                         <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>
