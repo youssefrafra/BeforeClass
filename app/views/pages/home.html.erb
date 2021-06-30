@@ -6,8 +6,6 @@
     <% unless user_signed_in? %>
       <%= button_to "Découvre ton profil", questions_path,method: :get, class: "button" %>
     <%end%>
-    <%# <%= image_tag "website.svg",class:"home-svg" %>
-        <div style="background-image: url('../images/backgroundgame.png');"></div>
   </div>
 </div>
 <%= link_to "", games_path, method: :post , id:"create-session", hidden: true%>
