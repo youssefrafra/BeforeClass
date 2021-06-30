@@ -2,7 +2,7 @@ const devSchoolModal = () => {
 
 const cardSchool = document.querySelectorAll('.card-school');
 const modalSchool = document.getElementById('show-school');
-
+const logo = modalSchool.querySelector(".school-logo")
 const name = modalSchool.querySelector(".school-title");
 const address = modalSchool.querySelector(".school-address");
 const description = modalSchool.querySelector(".school-description");
@@ -22,19 +22,15 @@ const url = modalSchool.querySelector(".school-url");
       address.innerText = `${event.currentTarget.dataset.address}`;
       description.innerText = `${event.currentTarget.dataset.description}`;
       duration.innerText = `${event.currentTarget.dataset.duration}`;
-      payment.innerText = `${event.currentTarget.dataset.payment}`;
-      certifying.innerText = `${event.currentTarget.dataset.certifying}`;
-      remote.innerText = `${event.currentTarget.dataset.remote}`;
+      payment.innerText = `${event.currentTarget.dataset.payment === "true" ? "Oui" : "Non"}`; 
+      certifying.innerText = `${event.currentTarget.dataset.certifying === "true" ? "Oui" : "Non"}`;
+      remote.innerText = `${event.currentTarget.dataset.remote === "true" ? "Oui" : "Non"}`;
       price.innerText = `${event.currentTarget.dataset.price}`;
       category.innerText = `${event.currentTarget.dataset.category}`;
       url.innerText = `${event.currentTarget.dataset.url}`;
 
-      // const logo = modalSchool.querySelector(".school-logo").src = 
-      // logo.innerText = `${event.currentTarget.dataset.logo}`;
 
-
-
-      
+      logo.src = `${event.currentTarget.dataset.logo}`;
 
 
 
