@@ -2,6 +2,7 @@ const devSchoolModal = () => {
 
 const cardSchool = document.querySelectorAll('.card-school');
 const modalSchool = document.getElementById('show-school');
+
 const name = modalSchool.querySelector(".school-title");
 const address = modalSchool.querySelector(".school-address");
 const description = modalSchool.querySelector(".school-description");
@@ -13,11 +14,9 @@ const price = modalSchool.querySelector(".school-price");
 const category = modalSchool.querySelector(".school-category");
 const url = modalSchool.querySelector(".school-url");
 
-// const logo = modalSchool.querySelector(".school-logo");
+    
 
-
-
-  cardSchool.forEach((school) => {
+    cardSchool.forEach((school) => {
     school.addEventListener("click", (event) => {
       name.innerText = `${event.currentTarget.dataset.name}`;
       address.innerText = `${event.currentTarget.dataset.address}`;
@@ -29,6 +28,18 @@ const url = modalSchool.querySelector(".school-url");
       price.innerText = `${event.currentTarget.dataset.price}`;
       category.innerText = `${event.currentTarget.dataset.category}`;
       url.innerText = `${event.currentTarget.dataset.url}`;
+
+      // const logo = modalSchool.querySelector(".school-logo").src = 
+      // logo.innerText = `${event.currentTarget.dataset.logo}`;
+
+
+
+      
+
+
+
+
+
       $('#show-school').modal('show');
     });
   })
