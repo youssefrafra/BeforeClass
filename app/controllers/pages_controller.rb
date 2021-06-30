@@ -3,16 +3,13 @@ class PagesController < ApplicationController
 
   def home
     @question = Question.first
+    # raise
   end
 
   def dashboard
     @user_game = UserGame.where(user: current_user)
-    @games = @user_game.map do |user_game|
-      user_game.game
-    end
-    
+    @games = @user_game.map {|user_game| user_game.game }.sort_by{ |game| game.order }
     @completed_num = @user_game.where(completed:true).count
-
     @devschools = DevSchool.all
     @completed_html = completed('html')
     @completed_css = completed('css')
@@ -20,7 +17,8 @@ class PagesController < ApplicationController
     @total_html =  total('html')
     @total_css =  total('css')
     @total_js =  total('js')
-
+    
+    # raise
     @markers = @devschools.geocoded.map do |devschool|
       {
         lat: devschool.latitude,

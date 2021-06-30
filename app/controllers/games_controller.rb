@@ -30,7 +30,6 @@ class GamesController < ApplicationController
     # raise
   end
 
-
     private
 
     def game_params

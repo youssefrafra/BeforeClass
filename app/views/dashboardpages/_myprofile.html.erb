@@ -1,14 +1,10 @@
 <div class="container mt-3 mb-3 profile-card" style="background-color:rgba(208, 81, 12, 0.9);border-radius:15px">
     <div>
-        <%= image_tag "webdesign.svg", class:"profile-photo" %>
+        <%= image_tag "#{current_user.profile_type}.svg", class:"profile-photo" %>
     </div>
     <div class="d-flex flex-column justify-content-around">
-        <h1>Ton profil: FRONT_END</h1>
-        <p>Le développeur front-end est responsable de toute l’interface<br>
-            graphique visible par les utilisateurs. Il est donc un maitre dans<br>
-            l’implémentation du code HTML, CSS et JAVASCRIPT.<br><br>
-            Et toi? Où en es-tu avec ces langages?
-        </p>
+        <h1>Ton profil: <%= current_user.profile_type.upcase %></h1>
+        <%= render  "profiletype/#{current_user.profile_type}" %>
     </div>
 </div>
 <div class="d-flex justify-content-between">
@@ -46,27 +42,27 @@
     
     <div class="container mt-3 mb-3 pb-1 challenges" style="color:white;background-color:rgba(208, 81, 12, 0.9);border-radius:15px">
         <h3>TES PROCHAINS CHALLENGES</h3>
-        <% @user_game.first(4).each do |usergame| %>
-            <% if usergame.unlocked %>
+        <% @games.first(4).each do |game| %>
+            <% if @user_game.find_by(game: game).unlocked %>
                 <div class="card-challenge">
-                <%= link_to game_path(usergame.game) do%>
-                    <%= image_tag "logo-#{usergame.game.order}.svg" , class:"logo"%>
+                <%= link_to game_path(game) do%>
+                    <%= image_tag "logo-#{game.order}.svg" , class:"logo"%>
                     <%end%>
                     <div class="card-challenge-infos">
-                    <%= image_tag "#{usergame.game.category}.svg" , class:"lang"%>
-                        <h2><%= usergame.game.title %></h2>
-                        <% (usergame.game.difficulty).times do %>
+                    <%= image_tag "#{game.category}.svg" , class:"lang"%>
+                        <h2><%= game.title %></h2>
+                        <% (game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
-                        <p><%= usergame.game.short_description %></p>
+                        <p><%= game.short_description %></p>
                     </div>
                 </div>
             <% else %>
                 <div class="card-challenge">
                     <%= image_tag "lock.svg", class:"logo" %>
                     <div class="card-challenge-infos">
-                        <h2><%= usergame.game.title %></h2>
-                        <% (usergame.game.difficulty).times do %>
+                        <h2><%=  game.title %></h2>
+                        <% ( game.difficulty).times do %>
                             <i class="fas fa-skull"></i>
                         <%end%>
                         <p><strong>Complètes le jeux précédent pour déverouiller</strong></p>

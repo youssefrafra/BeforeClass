@@ -83,7 +83,7 @@ const initDraggable = () => {
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'Correct !',
+                    title: 'C\' est correct !',
                     showConfirmButton: false,
                     timer: 800
                   })
@@ -93,7 +93,7 @@ const initDraggable = () => {
             }else{
                 Swal.fire({
                     title: 'Wrong!',
-                    text: 'Oops! Wrong answer!',
+                    text: 'Oops! Mauvaise réponse!',
                     icon: 'error',
                     confirmButtonText: 'Try again'
                   })
