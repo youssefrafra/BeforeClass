@@ -214,13 +214,35 @@
 }
 
 .card-school {
-  height: 195px;
-  width: 285px;
-  left: 50px;
-  top: 347px;
-  border-radius: 15px;
-  background-color: #178CA4;
-  color: #F4E9E6;
-  padding: 10px;
-  margin: 8px;
+    height: 195px;
+    border-radius: 15px;
+    background-color: #178CA4;
+    color: #F4E9E6;
+    padding: 15px;
+    margin: 7px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px;
+}
+
+img {
+  width: 20%;
+}
+
+.school {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.school h4 {
+  align-self: center;
+}
+
+h4 {
+  font-family: "Righteous", "cursive";
 }
