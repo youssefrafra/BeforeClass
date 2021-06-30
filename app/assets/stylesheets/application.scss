@@ -12,13 +12,9 @@
 @import "components/index";
 @import "pages/index";
 
-
-.main {
-  display: flex;
-}
-
 #map {
-  height: 100%;
   position: sticky;
   top: 0;
+  width: 100vw;
+  border-radius: 15px;
 }

@@ -31,6 +31,7 @@ import {progressCircle} from "../plugins/progress"
 import {initDraggable} from "../plugins/drag"
 import {intEditor} from "../plugins/init_editor"
 import { initMapbox } from '../plugins/init_mapbox';
+import { devSchoolModal } from '../plugins/devschool_modal'
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -41,4 +42,5 @@ document.addEventListener('turbolinks:load', () => {
   initDraggable();
   intEditor();
   initMapbox();
+  devSchoolModal();
 });
