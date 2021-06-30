@@ -41,5 +41,5 @@ document.addEventListener('turbolinks:load', () => {
   initDraggable();
   intEditor();
   initMapbox();
-  devSchoolModal();
+  // devSchoolModal();
 });
