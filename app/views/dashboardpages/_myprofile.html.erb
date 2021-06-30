@@ -1,14 +1,10 @@
 <div class="container mt-3 mb-3 profile-card" style="background-color:#178CA4;border-radius:15px">
     <div>
-        <%= image_tag "webdesign.svg", class:"profile-photo" %>
+        <%= image_tag "#{current_user.profile_type}.svg", class:"profile-photo" %>
     </div>
     <div class="d-flex flex-column justify-content-around">
-        <h1>Ton profil: FRONT_END</h1>
-        <p>Le développeur front-end est responsable de toute l’interface<br>
-            graphique visible par les utilisateurs. Il est donc un maitre dans<br>
-            l’implémentation du code HTML, CSS et JAVASCRIPT.<br><br>
-            Et toi? Où en es-tu avec ces langages?
-        </p>
+        <h1>Ton profil: <%= current_user.profile_type.upcase %></h1>
+        <%= render  "profiletype/#{current_user.profile_type}" %>
     </div>
 </div>
 <div class="d-flex justify-content-between">

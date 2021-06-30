@@ -30,6 +30,16 @@ class GamesController < ApplicationController
     # raise
   end
 
+  def create_session
+    raise
+    if user_signed_in?
+      # raise
+      @games = Game.all
+      @games.each do |game|
+        UserGame.create!(user: current_user, game: game, unlocked: game.order == 1)
+      end
+    end
+  end
 
     private
 

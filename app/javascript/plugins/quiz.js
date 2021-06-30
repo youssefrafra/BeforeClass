@@ -29,9 +29,10 @@ const answerCounter = () => {
     btn.addEventListener("click", event => {
       questionCount ++;
       progress();
-      counter--; 
+      // counter--; 
       if(questionCount == 6) {
-        $('#myModal').modal('show');
+        // $('#myModal').modal('show');
+        postData("/users/sign_up");
       }   
     });
   })
@@ -42,8 +43,8 @@ const answerCounter = () => {
       progress();
       counter++;
       if(questionCount == 6) {
-        $('#myModal').modal('show');
-        postData("/");
+        // $('#myModal').modal('show');
+        postData("/users/sign_up");
       }
     });
   })
@@ -63,7 +64,7 @@ const answerCounter = () => {
       // .then(response => response.json())
       .then((data) => {
         document.location.href = url
-          console.log(data)
+        // console.log(data)
       })
   };
 
