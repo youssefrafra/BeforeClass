@@ -12,28 +12,21 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   def create
-    # raise
     super
     if session[:question_state]
-      # raise
       if session[:question_state]["counter"] > 3
         @user.profile_type = "front-end"
         @user.save!
-        # raise
       elsif session[:question_state]["counter"] < 3
         @user.profile_type = "back-end"
         @user.save!
-
-        # raise
       else
-        # raise
         @user.profile_type = "fullstack"
         @user.save!
       end
     else
-      raise
+      @user.profile_type = ["fullstack","back-end","front-end"].sample
     end
-    # raise
   end
 
   # GET /resource/edit

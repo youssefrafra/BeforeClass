@@ -69,8 +69,8 @@ import { fetchWithToken } from "../utils/fetch_with_token";
       body: JSON.stringify(question_data)
   })
       .then((data) => {
-        document.location.href = url
-        // console.log(data)
+        document.location.href = url;
+        // console.log(data);
       })
   };
 
