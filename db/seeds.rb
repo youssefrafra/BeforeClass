@@ -37,8 +37,6 @@ devschool1 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.ironhack.com/fr/developpement-web/paris",
-    longitude: 2.3884192,
-    latitude: 48.8526736,
     price: "8000€")
 
 devschool2 = DevSchool.new(
@@ -50,8 +48,6 @@ devschool2 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.ironhack.com/fr/developpement-web/paris",
-    longitude: 2.3884192,
-    latitude: 48.8526736,
     price: "8000€")
 
 devschool3 = DevSchool.new(
@@ -63,8 +59,6 @@ devschool3 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "httpas://www.lewagon.com/fr/lille/web-development-course/full-time",
-    longitude: 3.0153755,
-    latitude: 50.6314883,
     price: "6000€")
 
 devschool4 = DevSchool.new(
@@ -76,8 +70,6 @@ devschool4 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/lille/web-development-course/part-time",
-    longitude: 3.0153755,
-    latitude: 50.6314883,
     price: "6000€")
 
 devschool5 = DevSchool.new(
@@ -89,8 +81,6 @@ devschool5 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/part-time",
-    longitude: -0.565732,
-    latitude: 44.8592175,
     price: "6000€")
 
 devschool6 = DevSchool.new(
@@ -102,8 +92,6 @@ devschool6 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/full-time",
-    longitude: -0.565732,
-    latitude: 44.8592175,
     price: "6000€")
 
 devschool7 = DevSchool.new(
@@ -115,8 +103,6 @@ devschool7 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/part-time",
-    longitude: 4.8348625,
-    latitude: 45.7694579,
     price: "6000€")
 
 devschool8 = DevSchool.new(
@@ -128,8 +114,6 @@ devschool8 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/full-time",
-    longitude: 4.8348625,
-    latitude: 45.7694579,
     price: "6000€")
 
 devschool9 = DevSchool.new(
@@ -141,8 +125,6 @@ devschool9 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/marseille/web-development-course/part-time",
-    longitude: 5.3798113,
-    latitude: 43.2864558,
     price: "6000€")
 
 devschool10 = DevSchool.new(
@@ -154,8 +136,6 @@ devschool10 = DevSchool.new(
     certifying: true,
     category: "Full stack",
     url: "https://www.lewagon.com/fr/marseille/web-development-course/full-time",
-    longitude: 5.3798113,
-    latitude: 43.2864558,
     price: "6000€")
 
 devschool11 = DevSchool.new(

@@ -1,18 +1,23 @@
 import { fetchWithToken } from "../utils/fetch_with_token";
 
-const answerCounter = () => {
+
+  const answerCounter = () => {
   const btnNo = document.querySelectorAll(".btn-no");
   const btnYes = document.querySelectorAll(".btn-yes");
   const progressBar = document.querySelector(".progress-bar")
   const cookiesNo = document.querySelector(".no");
   const cookiesYep = document.querySelector(".yep");
+  
+  
+  
+  
+  
   if(cookiesNo) {
     cookiesNo.addEventListener("click",(event) => {
       postData("/");
     });
   } 
  
-
   if(cookiesYep) {
     cookiesYep.addEventListener("click",(event) => {
     postData("users/sign_in");
@@ -24,6 +29,8 @@ const answerCounter = () => {
 
   let counter = 0;
   let questionCount = 0;
+  
+  
   
   btnNo.forEach((btn) => {
     btn.addEventListener("click", event => {
@@ -49,26 +56,27 @@ const answerCounter = () => {
     });
   })
 
+  
+  
   const postData = (url) => {
     const question_data = {counter: counter};
-    // console.log("hello");
     fetchWithToken('/save', {
       method: "POST",
-      redirect: "follow",
       headers: {
           "Accept": "application/json",
           "Content-Type": "application/json"
       },
       body: JSON.stringify(question_data)
   })
-      // .then(response => response.json())
       .then((data) => {
         document.location.href = url
         // console.log(data)
       })
   };
 
- const progress = () => {
+ 
+ 
+  const progress = () => {
    let width = parseInt(progressBar.style.width, 10);
    width += 20;
    progressBar.style.width = `${width}%`
