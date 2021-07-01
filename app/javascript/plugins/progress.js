@@ -52,7 +52,7 @@ const progressCircle = () => {
         }
       }
       if(document.querySelector('.avancement')){
-        window.customElements.define('progress-ring', ProgressRing);
+        window.customElements.get('progress-ring') || window.customElements.define('progress-ring', ProgressRing);
       }
       
       // emulate progress attribute change
