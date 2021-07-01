@@ -22,7 +22,7 @@ if(modalSchool){
       address.innerText = `${event.currentTarget.dataset.address}`;
       description.innerText = `${event.currentTarget.dataset.description}`;
       duration.innerText = `${event.currentTarget.dataset.duration}`;
-      payment.innerText = `${event.currentTarget.dataset.payment === "true" ? "Financement" : "Pas de financement"}`; 
+      payment.innerText = `${event.currentTarget.dataset.payment === "true" ? "Financement" : "Pas d'aide"}`; 
       certifying.innerText = `${event.currentTarget.dataset.certifying === "true" ? "Certifiante" : "Non certifiante"}`;
       remote.innerText = `${event.currentTarget.dataset.remote === "true" ? "Distanciel" : "Présentiel"}`;
       price.innerText = `${event.currentTarget.dataset.price}`;

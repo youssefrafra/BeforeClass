@@ -39,7 +39,7 @@ devschool1 = DevSchool.new(
     url: "https://www.ironhack.com/fr/developpement-web/paris",
     url_photo: "https://www.defi-metiers.fr/sites/default/files/doc-kelios/Logo/2017/11/07/IHlogo_new_blue.png",
     price: "8000€",
-    score_to_unlock: 50,
+    score_to_unlock: 30,
     remote: false)
 
 devschool2 = DevSchool.new(
@@ -53,7 +53,7 @@ devschool2 = DevSchool.new(
     url: "https://www.ironhack.com/fr/developpement-web/paris",
     url_photo: "https://www.defi-metiers.fr/sites/default/files/doc-kelios/Logo/2017/11/07/IHlogo_new_blue.png",
     price: "8000€",
-    score_to_unlock: 50,
+    score_to_unlock: 30,
     remote: true)
 
 devschool3 = DevSchool.new(
@@ -67,7 +67,7 @@ devschool3 = DevSchool.new(
     url: "httpas://www.lewagon.com/fr/lille/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 90,
     remote: false)
 
 devschool4 = DevSchool.new(
@@ -81,7 +81,7 @@ devschool4 = DevSchool.new(
     url: "https://www.lewagon.com/fr/lille/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: true)
 
 devschool5 = DevSchool.new(
@@ -95,7 +95,7 @@ devschool5 = DevSchool.new(
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: true)
 
 devschool6 = DevSchool.new(
@@ -123,7 +123,7 @@ devschool7 = DevSchool.new(
     url: "https://www.lewagon.com/fr/bordeaux/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: true)
 
 devschool8 = DevSchool.new(
@@ -151,7 +151,7 @@ devschool9 = DevSchool.new(
     url: "https://www.lewagon.com/fr/marseille/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: true)
 
 devschool10 = DevSchool.new(
@@ -165,7 +165,7 @@ devschool10 = DevSchool.new(
     url: "https://www.lewagon.com/fr/marseille/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: false)
 
 devschool11 = DevSchool.new(
@@ -179,7 +179,7 @@ devschool11 = DevSchool.new(
     url: "https://www.lewagon.com/fr/nantes/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: true)
 
 devschool12 = DevSchool.new(
@@ -207,7 +207,7 @@ devschool13 = DevSchool.new(
     url: "https://www.lewagon.com/fr/nice/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: false)
 
 devschool14 = DevSchool.new(
@@ -235,7 +235,7 @@ devschool15 = DevSchool.new(
     url: "https://www.lewagon.com/fr/paris/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6900€",
-    score_to_unlock: 80,
+    score_to_unlock: 30,
     remote: true)
 
 devschool16 = DevSchool.new(
@@ -263,7 +263,7 @@ devschool17 = DevSchool.new(
     url: "https://www.lewagon.com/fr/rennes/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 80,
+    score_to_unlock: 50,
     remote: true)
 
 devschool18 = DevSchool.new(
@@ -277,7 +277,7 @@ devschool18 = DevSchool.new(
     url: "https://www.lereacteur.io/bootcamp-javascript/formation-developpeur-web-mobile/",
     url_photo: "https://secure.meetupstatic.com/photos/event/8/a/c/0/600_480335520.jpeg",
     price: "7500€",
-    score_to_unlock: 30,
+    score_to_unlock: 50,
     remote: false)
 
 devschool19 = DevSchool.new(
@@ -305,7 +305,7 @@ devschool20 = DevSchool.new(
     url: "https://www.lacapsule.academy/coding-bootcamp-monaco",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
     price: "7000€",
-    score_to_unlock: 30,
+    score_to_unlock: 50,
     remote: false)
 
 devschool21 = DevSchool.new(
@@ -361,7 +361,7 @@ devschool24 = DevSchool.new(
     url: "https://www.lacapsule.academy/coding-bootcamp-paris",
     url_photo: "https://techsnooper.io/wp-content/uploads/2020/09/la-capsule-1-731x600.png",
     price: "7000€",
-    score_to_unlock: 30,
+    score_to_unlock: 50,
     remote: false)
 
 devschool25 =DevSchool.new(
@@ -375,7 +375,7 @@ devschool25 =DevSchool.new(
     url: "https://oclock.io/formations/developpeur-web",
     url_photo: "https://21douze.fr/wp-content/uploads/2018/10/Logo-noir-vert-800x400.png",
     price: "6500€",
-    score_to_unlock: 10,
+    score_to_unlock: 30,
     remote: false)
 
 devschool26 = DevSchool.new(
@@ -389,7 +389,7 @@ devschool26 = DevSchool.new(
     url: "https://www.wildcodeschool.com/fr-FR/formations/formation-developpeur-front-end/remote-francais",
     url_photo: "https://www.wildcodeschool.com/static/imgs/logo.png",
     price: "4050€",
-    score_to_unlock: 10,
+    score_to_unlock: 30,
     remote: true)
 
 devschool27 = DevSchool.new(
@@ -405,6 +405,77 @@ devschool27 = DevSchool.new(
     price: "300€ / mois",
     score_to_unlock: 0,
     remote: true)
+
+    devschool28 = DevSchool.new(
+        name: "Orsys formation",
+        address: "2 Quai Kléber, 67000 Strasbourg",
+        duration: "4 jours", 
+        description: "Vous maitriserez le langage PHP dans le contexte de développement de sites Internet dynamiques. Il vous sera possible aussi d'aborder les aspects connexes à ce type de développement : bases de données, langage SQL, manipulation de fichiers graphiques...Vous pourrez valider vos compétences avec la certification AVIT® proposée en option.",  
+        payment_facilities: true,
+        certifying: true,
+        category: "back-end",
+        url: "https://www.orsys.fr/formation-php-7-5-developper-un-site-web-dynamique.html",
+        url_photo: "https://www.digital-league.org/wp-content/uploads/2020/01/5e281c75bf6fc1579687029.png",
+        price: "2490€",
+        score_to_unlock: 0,
+        remote: false)
+
+    devschool29 = DevSchool.new(
+        name: "M2I",
+        address: "22 Avenue Doyen Louis Weil, 38000 Grenoble",
+        duration: "5 jours", 
+        description: "Vous maitriserez le langage PHP dans le contexte de développement des pages Web dynamiques et dans un environnement Internet / Intranet, avec une connexion à une base de données.",  
+        payment_facilities: true,
+        certifying: true,
+        category: "back-end",
+        url: "https://www.m2iformation.fr/formation-php-5-et-7-mysql-creation-de-pages-web-dynamiques/PHP-IN/",
+        url_photo: "https://master-m2i.parisnanterre.fr/wp-content/uploads/2017/11/cropped-M2i.png",
+        price: "2600€",
+        score_to_unlock: 10,
+        remote: true)
+
+    devschool30 = DevSchool.new(
+        name: "42",
+        address: "78 Route de Paris, 69260 Charbonnières-les-Bains",
+        duration: "3 ans", 
+        description: "L'école 42 Lyon est une formation en informatique entièrement gratuite, ouverte à toutes et tous et accessible à partir de 18 ans. Sa pédagogie, le peer-to-peer learning : un modèle participatif qui permet aux apprenants et apprenantes de la formation d’exprimer leur créativité grâce à l’apprentissage par projets. Pour former en grand nombre les talents du numérique de demain, l’école d eprogrammation met à disposition une infrastructure informatique sur le Campus Région du Numérique. 42 Lyon est l'une des réponses à ce que devrait être l’école de demain.",  
+        payment_facilities: false,
+        certifying: false,
+        category: "full-stack",
+        url: "https://www.42lyon.fr/",
+        url_photo: "https://www.42lyon.fr/static/logos/42_LYON_LOGO.png",
+        price: "Gratuit",
+        score_to_unlock: 90,
+        remote: false)
+
+    devschool31 = DevSchool.new(
+        name: "Afpa",
+        address: "25 Chemin de Laharie, 64100 Bayonne",
+        duration: "8 mois", 
+        description: "Développer la partie front-end et back-end d’une application web ou web mobile en intégrant les recommandations de sécurité",
+        payment_facilities: true,
+        certifying: true,
+        category: "full-stack",
+        url: "https://www.afpa.fr/formation-qualifiante/developpeur-logiciel",
+        url_photo: "https://www.afpa.fr/image/journal/article?img_id=32302434&t=1479679519703",
+        price: "voir aides",
+        score_to_unlock: 10,
+        remote: false)
+
+    devschool32 = DevSchool.new(
+        name: "Simplon",
+        address: "34 Rue Antoine Primat, 69100 Villeurbanne",
+        duration: "7 mois", 
+        description: "De l’analyse du besoin à la mise en ligne, en passant par l’interface et la base de données, le·la développeur·se web conçoit et programme des applications web. Le⋅a développeur·se web réalise l’ensemble des fonctionnalités d’un site ou d’une application web. Le⋅a développeur·se web analyse les besoins des clients consignés au préalable dans un cahier des charges par le chef de projet. Il·elle préconise et met en œuvre une solution technique pour concevoir des sites sur mesure ou adapter des solutions techniques existantes.",
+        payment_facilities: true,
+        certifying: true,
+        category: "full-stack",
+        url: "https://simplon.co/session/developpeur-se-web-et-web-mobile-4/47",
+        url_photo: "https://arml-idf.org/wp-content/uploads/2016/05/logo_simplonco.png",
+        price: "voir aides",
+        score_to_unlock: 10,
+        remote: false)
+
 
     puts "Creating DevSchools...."
 
@@ -464,6 +535,13 @@ devschool27 = DevSchool.new(
     devschool25.save
     devschool26.save
     devschool27.save
+    devschool28.save
+    devschool29.save
+    devschool30.save
+    devschool31.save
+    devschool32.save
+
+
 puts "DevSchools created !"
 
 
