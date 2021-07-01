@@ -14,8 +14,8 @@
         <li class="nav-item">
           <%= link_to "Dashboard", dashboard_path, class: "nav-link" %>
         </li>
-        <li class="nav-item score">
-          <div><%= current_user.score %>pts</div>
+        <li class="nav-item" id="score">
+          <div id="reload"><%= current_user.score %>pts</div>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "gamer.svg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>

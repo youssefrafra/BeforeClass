@@ -10,7 +10,7 @@ class PagesController < ApplicationController
     @user_game = UserGame.where(user: current_user)
     @games = @user_game.map {|user_game| user_game.game }.sort_by{ |game| game.order }
     @completed_num = @user_game.where(completed:true).count
-    @devschools = DevSchool.all
+    @devschools = DevSchool.order(:score_to_unlock)
     @completed_html = completed('html')
     @completed_css = completed('css')
     @completed_js = completed('js')
