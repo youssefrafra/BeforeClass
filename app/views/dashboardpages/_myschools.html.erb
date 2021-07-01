@@ -27,10 +27,18 @@
                 <h4><%= devschool.name %></h4>
                 <img src="<%= devschool.url_photo %>" alt="logo">
               </div>
-              <div class="card-content">
+              <div class="card-address">
                 <%= devschool.address %>
-                  <i class="fas fa-hand-holding-usd"></i>
-                <%= devschool.payment_facilities ? "Oui" : "Non" %>
+              </div>
+              <div class="card-content">
+                <div class="certifying">
+                  <i class="fas fa-graduation-cap"></i>
+                  <small><%= devschool.certifying ? "Certificat Professionnel" : "Non certifiante" %></small>
+                </div>
+                <div class="duration">
+                  <i class="far fa-calendar-alt"></i>
+                  <small><%= devschool.duration %></small>
+                </div>
               </div>            
             </div>
                 <% end %>
