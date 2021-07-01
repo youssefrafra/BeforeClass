@@ -5,6 +5,11 @@ const init_game = () =>{
     const game1 = document.getElementById("game-1-input");
     const game2 = document.getElementById("game-2-input");
     const game3 = document.getElementById("game-3-input");
+    function reload(){
+        let score = document.getElementById("reload");
+        $('#reload').load(document.URL +  ' #reload');	
+        // console.log("Refreshed"); 
+    }
     if (game1){
         const correctanswer1 = "Le Wagon brings tech skills to creative people!";
         const correctanswer2 = "learn to code at one of our campuses around the world.";
@@ -25,6 +30,7 @@ const init_game = () =>{
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                setTimeout(() => (reload()),1000) 
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
@@ -59,12 +65,13 @@ const init_game = () =>{
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                setTimeout(() => (reload()),1000) 
                 Swal.fire({
-                    position: 'top-center',
+                    position: 'center',
                     icon: 'success',
                     title: 'C\' est correct !',
                     showConfirmButton: false,
-                    timer: 1000
+                    timer: 800
                   })
                 frog.style.animation = "none";
                 champion.style.visibility = "visible";
@@ -100,12 +107,13 @@ const init_game = () =>{
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
                 const ball = document.getElementById("ball");
+                setTimeout(() => (reload()),1000) 
                 Swal.fire({
-                    position: 'top-center',
+                    position: 'center',
                     icon: 'success',
                     title: 'C\' est correct !',
                     showConfirmButton: false,
-                    timer: 1000
+                    timer: 800
                   })
                 ball.style.animation = "none";
                 champion.style.visibility = "visible";
