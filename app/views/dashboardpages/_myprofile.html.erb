@@ -3,13 +3,13 @@
         <%= image_tag "#{current_user.profile_type}.svg", class:"profile-photo" %>
     </div>
     <div class="d-flex flex-column justify-content-around">
-        <h1>Ton profil: <%= current_user.profile_type.upcase %></h1>
+        <h1>Mon profil: <%= current_user.profile_type.upcase %></h1>
         <%= render  "profiletype/#{current_user.profile_type}" %>
     </div>
 </div>
 <div class="d-flex justify-content-between">
     <div class="container pt-3 mb-3 avancement" style="color:white;background-color:rgba(70, 130, 180, 0.9);border-radius:15px;">
-        <h3>TON AVANCEMENT</h3>
+        <h3>MON AVANCEMENT</h3>
         <div class="d-flex justify-content-around" style="height:100px;">
             <%= image_tag "html.svg", class:"badge-profil"%>
             <%= image_tag "css.svg", class:"badge-profil"%>
@@ -41,7 +41,7 @@
     </div>
     
     <div class="container pt-3 mb-3 pb-1 challenges" style="color:white;background-color:rgba(70, 130, 180, 0.9);border-radius:15px">
-        <h3>TES PROCHAINS CHALLENGES</h3>
+        <h3>MES PROCHAINS CHALLENGES</h3>
         <% @games.first(4).each do |game| %>
             <% if @user_game.find_by(game: game).unlocked %>
                 <div class="card-challenge">
