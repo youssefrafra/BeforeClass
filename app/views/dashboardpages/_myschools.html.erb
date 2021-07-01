@@ -50,7 +50,7 @@
 <%# ---------------- MODAL ----------------------- %>
 <!-- Large modal -->
   <div id ="show-school" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="school-info">
           <h1 class="school-title">title</h1>
@@ -59,16 +59,32 @@
         <h4 class="school-address">address</h4>
           <p class="school-description">description</p>
         <div class="school-info">
-          <p class="school-duration pills">duration</p>
-          <p class="school-payment pills">payment facilities</p>
-          <p class="school-certifying pills">certifying</p>
-          <p class="school-remote pills">remote</p>
-          <p class="school-category pills">category</p>
-          <p class="school-price pills">price</p>
+          <div class="duration pills">
+            <div><i class="fas fa-calendar-alt"></i></div>
+            <div class="school-duration"><p>duration</p></div>
+          </div>
+          <div class="payment pills">
+            <div><i class="fas fa-hand-holding-usd"></i></div>
+            <div class="school-payment"><p>payment facilities</p></div>
+          </div>
+          <div class="certifying pills">
+            <div><i class="fas fa-award"></i></div>
+            <div class="school-certifying"><p>certifying</p></div>
+          </div>
+          <div class="remote pills">
+            <div><i class="fas fa-laptop-house"></i></div>
+            <div class="school-remote"><p>remote</p></div>
+          </div>
+          <div class="category pills">
+            <div><i class="fas fa-code"></i></div>
+            <div class="school-category"><p>category</p></div>
+          </div>
+          <div class="pills">
+            <div><i class="fas fa-money-bill-wave"></i></div>
+            <div class="school-price"><p>price</p></div>
+          </div>   
         </div>
-          <%# <p class="school-url">www.test.com</p> %>
-          <a href="www.test.com" class="school-url" target="_blank">site</a>
-          
+          <a href="www.test.com" class="school-url" target="_blank">site</a>          
       </div>
     </div>
   </div>

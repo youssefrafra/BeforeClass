@@ -226,6 +226,9 @@
   color: #F4E9E6;
   padding: 10px;
   margin: 8px;
+    &:hover {
+      opacity: 0.8;
+    }
 }
 
 .card-content {
