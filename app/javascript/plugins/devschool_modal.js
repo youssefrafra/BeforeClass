@@ -16,7 +16,7 @@ const url = modalSchool.querySelector(".school-url");
 // const logo = modalSchool.querySelector(".school-logo");
 
 
-
+if(cardSchool){
   cardSchool.forEach((school) => {
     school.addEventListener("click", (event) => {
       name.innerText = `${event.currentTarget.dataset.name}`;
@@ -32,6 +32,7 @@ const url = modalSchool.querySelector(".school-url");
       $('#show-school').modal('show');
     });
   })
+}
  }
 
 export { devSchoolModal }
