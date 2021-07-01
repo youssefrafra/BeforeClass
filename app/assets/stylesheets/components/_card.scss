@@ -214,10 +214,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   flex-grow: 1;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .card-school {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 204px;
+  width: 350px;
+  border-radius: 15px;
+  background-color: steelblue;
+  opacity: 0.9;
+  color: #F4E9E6;
+  padding: 10px;
+  margin: 8px;
+  cursor: pointer;
+}
+.card-school-locked {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -239,6 +253,10 @@
   margin-left: 10px;
 }
 
+.card-school-locked img {
+  background-size: cover;
+  width: 20%;
+}
 .card-school img {
   background-size: cover;
   width: 20%;
