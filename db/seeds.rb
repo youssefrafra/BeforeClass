@@ -295,7 +295,7 @@ devschool19 = DevSchool.new(
     remote: false)
 
 devschool20 = DevSchool.new(
-    name: "Le Capsule",
+    name: "La Capsule",
     address: "5 Rue de l'Industrie, 98000 Monaco",
     duration: "10 semaines", 
     description: "Apprenez à coder dans notre campus de Monaco et rejoignez notre communauté d'experts de la tech, développeur ou développeuse web, intégrateur web, products owners, chef de projet digital, ou entrepreneurs !",  
@@ -309,7 +309,7 @@ devschool20 = DevSchool.new(
     remote: false)
 
 devschool21 = DevSchool.new(
-    name: "Le Capsule",
+    name: "La Capsule",
     address: "51 Quai Lawton, 33300 Bordeaux",
     duration: "10 semaines", 
     description: "Apprenez à coder dans notre campus de Bordeaux et rejoignez notre communauté d'experts de la tech, développeur ou développeuse web, intégrateur web, products owners, chef de projet digital, ou entrepreneurs !",  
@@ -323,7 +323,7 @@ devschool21 = DevSchool.new(
     remote: false)
 
 devschool22 = DevSchool.new(
-    name: "Le Capsule",
+    name: "La Capsule",
     address: "26 Rue de la République, 13001 Marseille",
     duration: "10 semaines", 
     description: "Apprenez à coder dans notre campus de Marseille et rejoignez notre communauté d'experts de la tech, développeur ou développeuse web, intégrateur web, products owners, chef de projet digital, ou entrepreneurs !",  
@@ -337,7 +337,7 @@ devschool22 = DevSchool.new(
     remote: false)
 
 devschool23 = DevSchool.new(
-    name: "Le Capsule",
+    name: "La Capsule",
     address: "92 Cours Lafayette, 69003 Lyon",
     duration: "10 semaines", 
     description: "Apprenez à coder dans notre campus de Lyon et rejoignez notre communauté d'experts de la tech, développeur ou développeuse web, intégrateur web, products owners, chef de projet digital, ou entrepreneurs !",  
@@ -351,7 +351,7 @@ devschool23 = DevSchool.new(
     remote: false)
 
 devschool24 = DevSchool.new(
-    name: "Le Capsule",
+    name: "La Capsule",
     address: "56 Boulevard Pereire, 75017 Paris",
     duration: "10 semaines", 
     description: "Apprenez à coder dans notre campus de Paris et rejoignez notre communauté d'experts de la tech, développeur ou développeuse web, intégrateur web, products owners, chef de projet digital, ou entrepreneurs !",  
