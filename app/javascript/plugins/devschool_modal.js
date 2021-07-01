@@ -2,21 +2,20 @@ const devSchoolModal = () => {
 
 const cardSchool = document.querySelectorAll('.card-school');
 const modalSchool = document.getElementById('show-school');
-const logo = modalSchool.querySelector(".school-logo");
+if(modalSchool){
+  const logo = modalSchool.querySelector(".school-logo");
 
-const name = modalSchool.querySelector(".school-title");
-const address = modalSchool.querySelector(".school-address");
-const description = modalSchool.querySelector(".school-description");
-const duration = modalSchool.querySelector(".school-duration");
-const payment = modalSchool.querySelector(".school-payment");
-const certifying = modalSchool.querySelector(".school-certifying");
-const remote = modalSchool.querySelector(".school-remote");
-const price = modalSchool.querySelector(".school-price");
-const category = modalSchool.querySelector(".school-category");
-const url = modalSchool.querySelector(".school-url");
+  const name = modalSchool.querySelector(".school-title");
+  const address = modalSchool.querySelector(".school-address");
+  const description = modalSchool.querySelector(".school-description");
+  const duration = modalSchool.querySelector(".school-duration");
+  const payment = modalSchool.querySelector(".school-payment");
+  const certifying = modalSchool.querySelector(".school-certifying");
+  const remote = modalSchool.querySelector(".school-remote");
+  const price = modalSchool.querySelector(".school-price");
+  const category = modalSchool.querySelector(".school-category");
+  const url = modalSchool.querySelector(".school-url");
 
-
-if(cardSchool){
   cardSchool.forEach((school) => {
     school.addEventListener("click", (event) => {
       name.innerText = `${event.currentTarget.dataset.name}`;

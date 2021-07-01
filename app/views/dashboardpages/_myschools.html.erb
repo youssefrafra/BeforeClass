@@ -1,5 +1,5 @@
 <div class="main">
-  <h1 class="text-center my-1">Mes écoles</h1>
+  <h1 class="pl-1 my-1" style="padding:15px 0 5px 15px;">Mes écoles</h1>
   <%# <input type="search" id="address-input" placeholder="Where are we studying?" /> %>
 <%# -------------- MAP -----------------     %>
   <div id="map"
@@ -11,37 +11,56 @@
   <%# ----------- card devschool ------------ %>
     <div class="cards">
       <% @devschools.each do |devschool| %>
-            <div class="card-school"
-                 data-name= "<%= devschool.name %>"
-                 data-address= "<%= devschool.address %>"
-                 data-description= "<%= devschool.description %>"
-                 data-duration= "<%= devschool.duration %>"
-                 data-payment= "<%= devschool.payment_facilities %>"
-                 data-certifying= "<%= devschool.certifying %>"
-                 data-remote= "<%= devschool.remote %>"
-                 data-price= "<%= devschool.price %>"
-                 data-url= "<%= devschool.url %>"
-                 data-logo= "<%= devschool.url_photo %>"
-                 data-category= "<%= devschool.category %>">            
-              <div class="school">
-                <h4><%= devschool.name %></h4>
-                <img src="<%= devschool.url_photo %>" alt="logo">
-              </div>
-              <div class="card-address">
-                <%= devschool.address %>
-              </div>
-              <div class="card-content">
-                <div class="certifying">
-                  <i class="fas fa-graduation-cap"></i>
-                  <small><%= devschool.certifying ? "Certificat Professionnel" : "Non certifiante" %></small>
+        <%if devschool.score_to_unlock <= current_user.score%>
+              <div class="card-school"
+                  data-name= "<%= devschool.name %>"
+                  data-address= "<%= devschool.address %>"
+                  data-description= "<%= devschool.description %>"
+                  data-duration= "<%= devschool.duration %>"
+                  data-payment= "<%= devschool.payment_facilities %>"
+                  data-certifying= "<%= devschool.certifying %>"
+                  data-remote= "<%= devschool.remote %>"
+                  data-price= "<%= devschool.price %>"
+                  data-url= "<%= devschool.url %>"
+                  data-logo= "<%= devschool.url_photo %>"
+                  data-category= "<%= devschool.category %>">            
+                <div class="school">
+                  <h4><%= devschool.name %></h4>
+                  <img src="<%= devschool.url_photo %>" alt="logo">
                 </div>
-                <div class="duration">
-                  <i class="far fa-calendar-alt"></i>
-                  <small><%= devschool.duration %></small>
+                <div class="card-address">
+                  <%= devschool.address %>
                 </div>
-              </div>            
-            </div>
-                <% end %>
+                <div class="card-content">
+                  <div class="certifying">
+                    <i class="fas fa-graduation-cap"></i>
+                    <small><%= devschool.certifying ? "Certificat Professionnel" : "Non certifiante" %></small>
+                  </div>
+                  <div class="duration">
+                    <i class="far fa-calendar-alt"></i>
+                    <small><%= devschool.duration %></small>
+                  </div>
+                </div>            
+              </div>
+            <%else%>
+            <div class="card-school-locked">            
+                <div class="school">
+                  <h4><%= devschool.name %></h4>
+                  <%= image_tag "lock.svg", class:"img-school" %>
+                </div>
+                <div class="card-content">
+                  <div class="certifying">
+                    <i class="fas fa-graduation-cap"></i>
+                    <small>Certifiante ?</small>
+                  </div>
+                  <div class="duration">
+                    <i class="far fa-calendar-alt"></i>
+                    <small>Durée</small>
+                  </div>
+                </div>            
+              </div>
+        <%end%>
+      <% end %>
     </div>
  <%# --------------------------------------------- %>
 

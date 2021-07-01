@@ -3,7 +3,7 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-
+  after_action :set_cookies, only: [:create]
   # GET /resource/sign_up
   def new
     super
@@ -12,21 +12,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   def create
+    # raise
     super
-    if session[:question_state]
-      if session[:question_state]["counter"] > 3
-        @user.profile_type = "front-end"
-        @user.save!
-      elsif session[:question_state]["counter"] < 3
-        @user.profile_type = "back-end"
-        @user.save!
-      else
-        @user.profile_type = "fullstack"
-        @user.save!
-      end
-    else
-      @user.profile_type = ["fullstack","back-end","front-end"].sample
-    end
+    # raise
   end
 
   # GET /resource/edit
@@ -53,6 +41,28 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
   end
 
+  def set_cookies
+    # raise
+    if @user.profile_type.nil?
+      if session[:question_state]
+        # raise
+        if session[:question_state]["counter"] > 3
+          @user.profile_type = "front-end"
+          @user.save
+        elsif session[:question_state]["counter"] < 3
+          @user.profile_type = "back-end"
+          @user.save
+        else
+          @user.profile_type = "fullstack"
+          @user.save
+        end
+        # raise
+      else
+        @user.profile_type = ["fullstack","back-end","front-end"].sample
+      end
+    end
+    # raise
+  end
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
