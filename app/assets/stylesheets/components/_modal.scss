@@ -35,12 +35,14 @@
   padding-right: 50px;
 }
 
-.school-url {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 80px;
-  margin-bottom: 20px;
-}
+// .school-link {
+//   // display: flex;
+//   // justify-content: flex-end;
+//   // padding-right: 80px;
+//   background-color: red;
+//   margin-bottom: 20px;
+//   display: contents!important;
+// }
 
 .school-address {
   padding-left: 60px;
@@ -61,7 +63,12 @@
 }
 
 #show-school a {
+  display: inline-block!important;
+  margin-bottom: 20px!important;
+  margin-right: 30px!important;
+  align-self: flex-end;
   text-decoration: none;
+  font-weight: bold;
   color: black;
   opacity: 1;
     &:hover {
