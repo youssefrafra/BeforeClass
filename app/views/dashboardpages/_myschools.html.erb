@@ -32,13 +32,10 @@
               <div class="card-content">
                 <%= devschool.address %>
                   <i class="fas fa-hand-holding-usd"></i>
-                  <%= devschool.payment_facilities ? "Oui" : "Non" %>
-
-              </div>
-              
+                <%= devschool.payment_facilities ? "Oui" : "Non" %>
+              </div>            
             </div>
-      
-            <% end %>
+                <% end %>
     </div>
  <%# --------------------------------------------- %>
 
@@ -50,20 +47,22 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="school-info">
-          <h1 class="school-title">TITLE</h1>
-          <h3 class="school-address">1, rue du test</h3>
+          <h1 class="school-title">title</h1>
           <img class="school-logo" src="https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png" alt="school-logo">
         </div>
+        <h4 class="school-address">address</h4>
           <p class="school-description">description</p>
         <div class="school-info">
-          <p class="school-duration btn-modal">duration</p>
-          <p class="school-payment btn-modal">payment facilities</p>
-          <p class="school-certifying btn-modal">certifiante</p>
-          <p class="school-remote btn-modal">remote</p>
-          <p class="school-category btn-modal">back/front/full</p>
-          <p class="school-price btn-modal">1000€</p>
+          <p class="school-duration pills">duration</p>
+          <p class="school-payment pills">payment facilities</p>
+          <p class="school-certifying pills">certifying</p>
+          <p class="school-remote pills">remote</p>
+          <p class="school-category pills">category</p>
+          <p class="school-price pills">price</p>
         </div>
-          <p class="school-url">www.test.com</p>
+          <%# <p class="school-url">www.test.com</p> %>
+          <a href="www.test.com" class="school-url" target="_blank">site</a>
+          
       </div>
     </div>
   </div>

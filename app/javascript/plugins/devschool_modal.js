@@ -2,7 +2,8 @@ const devSchoolModal = () => {
 
 const cardSchool = document.querySelectorAll('.card-school');
 const modalSchool = document.getElementById('show-school');
-const logo = modalSchool.querySelector(".school-logo")
+const logo = modalSchool.querySelector(".school-logo");
+
 const name = modalSchool.querySelector(".school-title");
 const address = modalSchool.querySelector(".school-address");
 const description = modalSchool.querySelector(".school-description");
@@ -22,14 +23,13 @@ const url = modalSchool.querySelector(".school-url");
       address.innerText = `${event.currentTarget.dataset.address}`;
       description.innerText = `${event.currentTarget.dataset.description}`;
       duration.innerText = `${event.currentTarget.dataset.duration}`;
-      payment.innerText = `${event.currentTarget.dataset.payment === "true" ? "Oui" : "Non"}`; 
-      certifying.innerText = `${event.currentTarget.dataset.certifying === "true" ? "Oui" : "Non"}`;
-      remote.innerText = `${event.currentTarget.dataset.remote === "true" ? "Oui" : "Non"}`;
+      payment.innerText = `${event.currentTarget.dataset.payment === "true" ? "Financement" : "Pas de financement"}`; 
+      certifying.innerText = `${event.currentTarget.dataset.certifying === "true" ? "Certifiante" : "Non certifiante"}`;
+      remote.innerText = `${event.currentTarget.dataset.remote === "true" ? "Distanciel" : "Présentiel"}`;
       price.innerText = `${event.currentTarget.dataset.price}`;
       category.innerText = `${event.currentTarget.dataset.category}`;
-      url.innerText = `${event.currentTarget.dataset.url}`;
-
-
+      url.innerText = `${event.currentTarget.dataset.name}`;
+      url.href = `${event.currentTarget.dataset.url}`;
       logo.src = `${event.currentTarget.dataset.logo}`;
 
 
