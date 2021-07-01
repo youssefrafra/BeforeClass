@@ -25,6 +25,11 @@ class GamesController < ApplicationController
   def complete
     @game = Game.find(params[:id])
     @user_game = UserGame.find_by(user: current_user, game: @game)
+    # raise
+    unless @user_game.completed
+      current_user.score += 10 * @user_game.game.difficulty
+      current_user.save
+    end
     @user_game.update(completed: true)
     unlock(@game)
     # raise

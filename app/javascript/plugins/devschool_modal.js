@@ -15,9 +15,9 @@ const price = modalSchool.querySelector(".school-price");
 const category = modalSchool.querySelector(".school-category");
 const url = modalSchool.querySelector(".school-url");
 
-    
 
-    cardSchool.forEach((school) => {
+if(cardSchool){
+  cardSchool.forEach((school) => {
     school.addEventListener("click", (event) => {
       name.innerText = `${event.currentTarget.dataset.name}`;
       address.innerText = `${event.currentTarget.dataset.address}`;
@@ -39,6 +39,7 @@ const url = modalSchool.querySelector(".school-url");
       $('#show-school').modal('show');
     });
   })
+}
  }
 
 export { devSchoolModal }

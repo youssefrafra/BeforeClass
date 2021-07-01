@@ -40,6 +40,7 @@ document.addEventListener('turbolinks:load', () => {
   progressCircle();
   initDraggable();
   intEditor();
+  // setTimeout(()=> (initMapbox()),0);
   initMapbox();
   devSchoolModal();
 });
