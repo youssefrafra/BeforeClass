@@ -48,12 +48,15 @@
 }
 
 .pills {
+  font-size: small;
   background-color: #244752;
   color: #F4E9E6;
-  width: 15%;
-  height: 27px;
-  text-align: center;
-  justify-content: center;
+  width: 16%;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
   border-radius: 26px;
 }
 
@@ -62,6 +65,7 @@
   color: black;
   opacity: 1;
     &:hover {
+      color: rgb(27, 26, 26);
       opacity: 0.6;
     }
 }
