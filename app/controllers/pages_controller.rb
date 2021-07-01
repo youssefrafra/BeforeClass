@@ -11,6 +11,7 @@ class PagesController < ApplicationController
     @games = @user_game.map {|user_game| user_game.game }.sort_by{ |game| game.order }
     @completed_num = @user_game.where(completed:true).count
     @devschools = DevSchool.order(:score_to_unlock)
+    @unlocked_schools = @devschools.select {|school| school.score_to_unlock <= current_user.score }
     @completed_html = completed('html')
     @completed_css = completed('css')
     @completed_js = completed('js')
