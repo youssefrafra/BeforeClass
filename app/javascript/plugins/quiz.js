@@ -7,9 +7,7 @@ import { fetchWithToken } from "../utils/fetch_with_token";
   const progressBar = document.querySelector(".progress-bar")
   const cookiesNo = document.querySelector(".no");
   const cookiesYep = document.querySelector(".yep");
-  
-  
-  
+
   
   
   if(cookiesNo) {
