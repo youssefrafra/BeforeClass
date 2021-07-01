@@ -6,7 +6,13 @@
   z-index: 2;
   position: absolute;
   background-color: #178CA4;
-  color: white;
+  color: #F4E9E6;
+}
+
+.modal-content {
+  border-radius: 15px;
+  background-color: steelblue;
+  opacity: 0.9;
 }
 
 .prog-w{
@@ -17,15 +23,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px;
+  margin: 30px;
 }
 
 .school-info img {
-  width: 12%;
+  width: 17%;
 }
 
 .school-description {
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .school-url {
@@ -33,4 +40,28 @@
   justify-content: flex-end;
   padding-right: 80px;
   margin-bottom: 20px;
+}
+
+.school-address {
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+
+.pills {
+  background-color: #244752;
+  color: #F4E9E6;
+  width: 15%;
+  height: 27px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 26px;
+}
+
+#show-school a {
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+    &:hover {
+      opacity: 0.6;
+    }
 }

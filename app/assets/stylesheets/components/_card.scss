@@ -211,13 +211,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   flex-grow: 1;
+  cursor: pointer;
 }
 
 .card-school {
   height: 195px;
-  width: 285px;
-  left: 50px;
-  top: 347px;
+  width: 350px;
   border-radius: 15px;
   background-color: steelblue;
   opacity: 0.9;
@@ -234,6 +233,7 @@
 }
 
 img {
+  background-size: cover;
   width: 20%;
 }
 
@@ -241,6 +241,7 @@ img {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .school h4 {
