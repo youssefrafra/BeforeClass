@@ -21,3 +21,16 @@
 // .mapboxgl-canvas{
 //   width: 1100px;
 // }
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+
+  h2 {
+    color: #588BB7;
+  }
+}
