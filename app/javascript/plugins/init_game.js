@@ -6,9 +6,7 @@ const init_game = () =>{
     const game2 = document.getElementById("game-2-input");
     const game3 = document.getElementById("game-3-input");
     function reload(){
-        let score = document.getElementById("reload");
         $('#reload').load(document.URL +  ' #reload');	
-        // console.log("Refreshed"); 
     }
     if (game1){
         const correctanswer1 = "Le Wagon brings tech skills to creative people!";

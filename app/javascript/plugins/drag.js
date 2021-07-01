@@ -70,6 +70,9 @@ const initDraggable = () => {
             return html
         }
         const submitButton = document.getElementById('submit');
+        function reload(){
+            $('#reload').load(document.URL +  ' #reload'); 
+        }
         submitButton.addEventListener('click', (event) => {
             event.preventDefault();
             const inputZone= document.getElementById('game-4-input');
@@ -80,6 +83,7 @@ const initDraggable = () => {
                 const complete = document.getElementById("complete");
                 const next = document.getElementById("next");
                 const champion = document.getElementById("champion");
+                setTimeout(() => (reload()),1000)
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
