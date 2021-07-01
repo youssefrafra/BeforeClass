@@ -41,7 +41,7 @@
     </div>
     
     <div class="container pt-3 mb-3 pb-1 challenges" style="color:white;background-color:rgba(70, 130, 180, 0.9);border-radius:15px">
-        <h3>MES PROCHAINS CHALLENGES</h3>
+        <h3>MES DERNIERS CHALLENGES</h3>
         <% @games.first(4).each do |game| %>
             <% if @user_game.find_by(game: game).unlocked %>
                 <div class="card-challenge">
