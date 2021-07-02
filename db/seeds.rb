@@ -64,7 +64,7 @@ devschool3 = DevSchool.new(
     payment_facilities: true,
     certifying: true,
     category: "Full stack",
-    url: "httpas://www.lewagon.com/fr/lille/web-development-course/full-time",
+    url: "https://www.lewagon.com/fr/lille/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
     score_to_unlock: 30,
