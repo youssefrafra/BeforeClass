@@ -564,10 +564,10 @@ puts "Questions created !"
 
 puts "DB cleaned"
 
-game1 = Game.create!(title: "Votre première bannière", short_description: "Reproduis une page en code Html",category:"html",order: 1, difficulty: 1)
-game2 = Game.create!(title: "Flexbox froggy", short_description: "Aidez Froggy la grenouille à atteindre le nénuphar en écrivant du code CSS!", category:"css",order: 2,  difficulty: 2)
+game1 = Game.create!(title: "Ma première bannière", short_description: "Reproduis une page en code Html",category:"html",order: 1, difficulty: 1)
+game2 = Game.create!(title: "Flexbox froggy", short_description: "Aide Froggy la grenouille à atteindre le nénuphar en écrivant du code CSS!", category:"css",order: 2,  difficulty: 2)
 game3 = Game.create!(title: "Miniature Golf Game", short_description: "Une petite partie de mini golf!", category:"css", order: 3,  difficulty: 2)
-game4 = Game.create!(title: "Votre deuxième bannière", short_description: "Reproduis une bannière en utilisant que des tags HTML", category:"html", order: 4,  difficulty: 3)
+game4 = Game.create!(title: "Ma deuxième bannière", short_description: "Reproduis une bannière en utilisant que des tags HTML", category:"html", order: 4,  difficulty: 3)
 # game5 = Game.create!(title: "Le DOM et Javascript", short_description: "Changer le DOM en utilisant du Javascript", category:"js", order: 5,  difficulty: 3)
 puts "Games created"
 
