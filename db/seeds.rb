@@ -67,7 +67,7 @@ devschool3 = DevSchool.new(
     url: "httpas://www.lewagon.com/fr/lille/web-development-course/full-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6000€",
-    score_to_unlock: 90,
+    score_to_unlock: 30,
     remote: false)
 
 devschool4 = DevSchool.new(
@@ -235,7 +235,7 @@ devschool15 = DevSchool.new(
     url: "https://www.lewagon.com/fr/paris/web-development-course/part-time",
     url_photo: "https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png",
     price: "6900€",
-    score_to_unlock: 30,
+    score_to_unlock: 80,
     remote: true)
 
 devschool16 = DevSchool.new(
