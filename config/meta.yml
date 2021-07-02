@@ -1,4 +1,4 @@
-meta_product_name: "Product Name"
-meta_title: "Product name - Product tagline"
-meta_description: "Relevant description"
+meta_product_name: "BeforeClass"
+meta_title: "BeforeClass - Développement web fun"
+meta_description: "Joue et trouve ta formation en développement web!"
 meta_image: "ogimage.png" # should exist in `app/assets/images/`
